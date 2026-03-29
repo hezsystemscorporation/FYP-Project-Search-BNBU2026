@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Custom scrollbar for modal */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        .toast {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(1rem);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-200 pb-12 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                
+                <!-- Logo/Title -->
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                        <i class="ph-fill ph-database text-blue-600 text-2xl"></i>
+                        Research Explorer
+                    </h1>
+                </div>
+                
+                <!-- Search & Inputs -->
+                <div class="flex flex-col sm:flex-row w-full lg:w-auto items-center gap-3">
+                    <div class="relative w-full sm:w-64">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="ph ph-magnifying-glass text-slate-400"></i>
+                        </div>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search projects..."
+                            class="block w-full pl-9 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                        />
+                    </div>
+
+                    <div class="relative w-full sm:w-64">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="ph ph-key text-slate-400"></i>
+                        </div>
+                        <input
+                            type="password"
+                            id="apiKeyInput"
+                            placeholder="Silicon Flow API Key"
+                            value=""
+                            class="block w-full pl-9 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                        />
+                    </div>
+
+                    <input type="file" id="fileInput" accept=".json" class="hidden" />
+                    <button id="uploadBtn" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors whitespace-nowrap">
+                        <i class="ph ph-upload-simple"></i> Upload JSON
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <!-- Empty State -->
+        <div id="emptyState" class="py-20 text-center bg-white rounded-2xl border border-slate-200 border-dashed shadow-sm">
+            <i class="ph ph-upload-simple mx-auto text-5xl text-slate-300 mb-4 inline-block"></i>
+            <h3 class="text-lg font-medium text-slate-900">No data loaded</h3>
+            <p class="mt-1 text-sm text-slate-500 mb-6">
+                Please upload a JSON file containing your research projects to get started.
+            </p>
+            <button id="emptyStateUploadBtn" class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                Choose JSON File
+            </button>
+            <p class="mt-4 text-xs text-slate-400 max-w-md mx-auto">
+                Expected format: Array of objects with properties like title, supervisor, category, description, and icon.
+            </p>
+        </div>
+
+        <!-- Main Content (Hidden initially) -->
+        <div id="mainContent" class="hidden">
+            <!-- Category Filters -->
+            <div id="categoryContainer" class="flex flex-wrap gap-2 mb-8">
+                <!-- Categories injected by JS -->
+            </div>
+
+            <!-- Project Grid -->
+            <div id="projectGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Projects injected by JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Details Modal -->
+    <div id="modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col">
+            
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10 shrink-0">
+                <div class="flex items-center gap-3">
+                    <div id="modalIconContainer" class="p-2 bg-slate-50 rounded-lg">
+                        <!-- Icon injected by JS -->
+                    </div>
+                    <span id="modalCategory" class="text-xs font-semibold tracking-wider text-slate-500 uppercase">
+                        <!-- Category injected by JS -->
+                    </span>
+                </div>
+                <button id="closeModalBtn" class="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors">
+                    <i class="ph ph-x text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="px-6 py-6 overflow-y-auto">
+                <h2 id="modalTitle" class="text-2xl font-bold text-slate-900 mb-2"></h2>
+                <p class="text-base font-medium text-slate-600 mb-6">
+                    Supervisor: <span id="modalSupervisor" class="text-slate-900"></span>
+                </p>
+                
+                <div class="prose prose-slate max-w-none mb-8">
+                    <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">Project Description</h3>
+                    <p id="modalDescription" class="text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100"></p>
+                </div>
+
+                <!-- AI Section -->
+                <div class="border-t border-slate-100 pt-6">
+                    <button id="askAIBtn" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-purple-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-700 transition-colors disabled:opacity-70 disabled:cursor-not-allowed">
+                        <i id="aiBtnIcon" class="ph ph-chat-circle-dots text-lg"></i>
+                        <span id="aiBtnText">Ask AI for Research Directions</span>
+                    </button>
+
+                    <div id="aiResponseContainer" class="mt-6 hidden">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="ph-fill ph-brain text-purple-600 text-xl"></i>
+                            <h4 class="font-semibold text-slate-900">AI Insights (Qwen 2.5 72B)</h4>
+                        </div>
+                        <div id="aiResponseText" class="bg-purple-50 p-5 rounded-xl border border-purple-100 text-slate-800 text-sm leading-relaxed whitespace-pre-wrap">
+                            <!-- AI Response text goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast fixed bottom-4 right-4 bg-slate-800 text-white px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 z-[60]">
+        <i class="ph ph-info text-xl"></i>
+        <span id="toastMessage" class="text-sm font-medium"></span>
+    </div>
+
+    <script>
+        // Data State
+        let projectsData = [];
+        let activeCategory = "All";
+        let searchQuery = "";
+        let selectedProject = null;
+
+        // Icon Mapping based on typical project categories/types
+        const getIconClass = (iconName) => {
+            const map = {
+                Cpu: 'ph-cpu text-blue-500',
+                Brain: 'ph-brain text-purple-500',
+                Eye: 'ph-eye text-emerald-500',
+                Database: 'ph-database text-amber-500',
+                Music: 'ph-music-notes text-pink-500',
+                Code: 'ph-code text-indigo-500'
+            };
+            return map[iconName] || 'ph-database text-slate-500';
+        };
+
+        // DOM Elements
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const emptyStateUploadBtn = document.getElementById('emptyStateUploadBtn');
+        const emptyState = document.getElementById('emptyState');
+        const mainContent = document.getElementById('mainContent');
+        const categoryContainer = document.getElementById('categoryContainer');
+        const projectGrid = document.getElementById('projectGrid');
+        const searchInput = document.getElementById('searchInput');
+        const apiKeyInput = document.getElementById('apiKeyInput');
+        
+        // Modal Elements
+        const modal = document.getElementById('modal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalSupervisor = document.getElementById('modalSupervisor');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalIconContainer = document.getElementById('modalIconContainer');
+        const askAIBtn = document.getElementById('askAIBtn');
+        const aiResponseContainer = document.getElementById('aiResponseContainer');
+        const aiResponseText = document.getElementById('aiResponseText');
+        const aiBtnIcon = document.getElementById('aiBtnIcon');
+        const aiBtnText = document.getElementById('aiBtnText');
+        
+        // Toast
+        const toast = document.getElementById('toast');
+        const toastMessage = document.getElementById('toastMessage');
+
+        // Utils
+        const showToast = (message, isError = false) => {
+            toastMessage.textContent = message;
+            if(isError) {
+                toast.classList.replace('bg-slate-800', 'bg-red-600');
+            } else {
+                toast.classList.replace('bg-red-600', 'bg-slate-800');
+            }
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        };
+
+        // Event Listeners
+        uploadBtn.addEventListener('click', () => fileInput.click());
+        emptyStateUploadBtn.addEventListener('click', () => fileInput.click());
+        
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    const json = JSON.parse(event.target.result);
+                    if (Array.isArray(json)) {
+                        projectsData = json;
+                        activeCategory = "All";
+                        searchInput.value = "";
+                        searchQuery = "";
+                        renderApp();
+                    } else {
+                        showToast("Please upload a JSON file containing an array of projects.", true);
+                    }
+                } catch (error) {
+                    showToast("Invalid JSON file format.", true);
+                }
+            };
+            reader.readAsText(file);
+            e.target.value = null; // reset
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            renderProjects();
+        });
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeModal();
+        });
+
+        askAIBtn.addEventListener('click', askAI);
+
+        // Core Render Logic
+        function renderApp() {
+            if (projectsData.length === 0) {
+                emptyState.classList.remove('hidden');
+                mainContent.classList.add('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                renderCategories();
+                renderProjects();
+            }
+        }
+
+        function renderCategories() {
+            const categories = ["All", ...new Set(projectsData.map(p => p.category).filter(Boolean))];
+            
+            categoryContainer.innerHTML = '';
+            categories.forEach(category => {
+                const btn = document.createElement('button');
+                btn.textContent = category;
+                
+                if (activeCategory === category) {
+                    btn.className = "px-4 py-2 rounded-full text-sm font-medium transition-colors bg-blue-600 text-white shadow-sm";
+                } else {
+                    btn.className = "px-4 py-2 rounded-full text-sm font-medium transition-colors bg-white text-slate-600 border border-slate-200 hover:bg-slate-50";
+                }
+                
+                btn.addEventListener('click', () => {
+                    activeCategory = category;
+                    renderCategories(); // re-render to update active styling
+                    renderProjects();
+                });
+                
+                categoryContainer.appendChild(btn);
+            });
+        }
+
+        function renderProjects() {
+            const filtered = projectsData.filter(project => {
+                const matchesCat = activeCategory === "All" || project.category === activeCategory;
+                const title = (project.title || "").toLowerCase();
+                const supervisor = (project.supervisor || "").toLowerCase();
+                const desc = (project.description || "").toLowerCase();
+                
+                const matchesSearch = title.includes(searchQuery) || supervisor.includes(searchQuery) || desc.includes(searchQuery);
+                return matchesCat && matchesSearch;
+            });
+
+            projectGrid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                projectGrid.innerHTML = `
+                    <div class="col-span-full py-12 text-center bg-white rounded-2xl border border-slate-200 border-dashed">
+                        <i class="ph ph-database mx-auto text-5xl text-slate-300 mb-3 inline-block"></i>
+                        <h3 class="text-lg font-medium text-slate-900">No projects match</h3>
+                        <p class="mt-1 text-sm text-slate-500">Try adjusting your search or category filter.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach((project, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col group cursor-pointer";
+                card.onclick = () => openModal(project);
+
+                const iconClass = getIconClass(project.icon);
+                const categoryHtml = project.category ? `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">${project.category}</span>` : '';
+
+                card.innerHTML = `
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2 bg-slate-50 rounded-lg border border-slate-100">
+                            <i class="ph-fill ${iconClass} text-2xl"></i>
+                        </div>
+                        ${categoryHtml}
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2 leading-tight group-hover:text-blue-600 transition-colors">
+                        ${project.title}
+                    </h3>
+                    <p class="text-sm font-medium text-slate-500 mb-4">
+                        Supervisor: <span class="text-slate-700">${project.supervisor}</span>
+                    </p>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow leading-relaxed line-clamp-3">
+                        ${project.description}
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-slate-100 flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700 transition-colors">
+                        View Details <i class="ph-bold ph-caret-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                `;
+                projectGrid.appendChild(card);
+            });
+        }
+
+        // Modal Logic
+        function openModal(project) {
+            selectedProject = project;
+            
+            modalTitle.textContent = project.title;
+            modalSupervisor.textContent = project.supervisor;
+            modalDescription.textContent = project.description;
+            modalCategory.textContent = project.category || '';
+            
+            const iconClass = getIconClass(project.icon);
+            modalIconContainer.innerHTML = `<i class="ph-fill ${iconClass} text-xl"></i>`;
+            
+            // Reset AI state
+            aiResponseContainer.classList.add('hidden');
+            aiResponseText.textContent = "";
+            setAiLoadingState(false);
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+        }
+
+        function closeModal() {
+            selectedProject = null;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        function setAiLoadingState(isLoading) {
+            if (isLoading) {
+                askAIBtn.disabled = true;
+                aiBtnIcon.className = "ph ph-spinner animate-spin text-lg";
+                aiBtnText.textContent = "Consulting AI...";
+            } else {
+                askAIBtn.disabled = false;
+                aiBtnIcon.className = "ph ph-chat-circle-dots text-lg";
+                aiBtnText.textContent = "Ask AI for Research Directions";
+            }
+        }
+
+        async function askAI() {
+            const apiKey = apiKeyInput.value.trim();
+            if (!apiKey) {
+                showToast("Please enter your Silicon Flow API Key first.", true);
+                return;
+            }
+
+            if (!selectedProject) return;
+
+            setAiLoadingState(true);
+            aiResponseContainer.classList.add('hidden');
+
+            const prompt = `I am considering a research project titled "${selectedProject.title}" supervised by ${selectedProject.supervisor}. Description: ${selectedProject.description}. Can you provide 3 interesting research questions or directions I could pursue based on this project?`;
+
+            try {
+                const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        model: "Qwen/Qwen3.5-122B-A10B",
+                        messages: [{ role: "user", content: prompt }],
+                        stream: false
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (response.ok && data.choices && data.choices.length > 0) {
+                    aiResponseText.textContent = data.choices[0].message.content;
+                    aiResponseContainer.classList.remove('hidden');
+                } else {
+                    showToast(`API Error: ${data.message || 'Failed to fetch response'}`, true);
+                }
+            } catch (error) {
+                showToast(`Network Error: ${error.message}`, true);
+            } finally {
+                setAiLoadingState(false);
+            }
+        }
+
+        // Initial render trigger
+        renderApp();
+    </script>
+</body>
+</html>
