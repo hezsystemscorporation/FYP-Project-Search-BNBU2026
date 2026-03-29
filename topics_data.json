@@ -1,0 +1,776 @@
+[
+  {
+    "file": "ChenhaoWang_FYP-Topics.docx",
+    "supervisor": "Chenhao Wang",
+    "title": "Heuristic Algorithm Design for Facility Location Problems in Novel Application Scenarios",
+    "description": "Description  This project focuses on the classical Facility Location Problem (FLP) applied to a novel, real-world scenario, such as deploying UAV (drone) delivery hubs or post-disaster temporary shelters. Instead of inventing a mathematical framework from scratch, the student will be guided to model the specific application constraints and \"assemble\" existing heuristic design concepts (e.g., combining a greedy initialization with a Genetic Algorithm or Local Search) to find near-optimal solutions. Additionally, the project will briefly introduce principles of mechanism design without money, exploring how algorithms can ensure fairness and strategy-proofness (i.e., ensuring no user can benefit by misreporting their actual location). The objective is to evaluate the designed heuristic against standard solvers or basic algorithms in terms of computation time, solution quality, and fairness."
+  },
+  {
+    "file": "ChenhaoWang_FYP-Topics.docx",
+    "supervisor": "Chenhao Wang",
+    "title": "Complex Rule Reasoning and Decision Making in Games Using Large Language Models",
+    "description": "This project explores the capability of Large Language Models (LLMs) to comprehend complex rulebooks and resolve logical conflicts in rule-driven environments like board games or trading card games. The goal is to evaluate how well AI can act as a referee or decision-maker when restricted by intricate textual mechanics. Students will construct and formalize a dataset mapping game rules to specific board states, and test various LLMs on their ability to make accurate decisions and resolve chain effects. Furthermore, the project will involve exploring multi-round reasoning or multi-agent brainstorming frameworks to reduce AI hallucinations and reach a logical consensus on complicated game resolutions."
+  },
+  {
+    "file": "ChenhaoWang_FYP-Topics.docx",
+    "supervisor": "Chenhao Wang",
+    "title": "Multimodal Reasoning and Geolocation Inference Using Vision-Language Models",
+    "description": "This project examines how Vision-Language Models (VLMs) process diverse visual clues such as vegetation, architecture, weather, and text, to deduce the geographical location of an image (similar to the game GeoGuessr). The aim is to address the current limitations of AI in long-chain logical reasoning and its tendency to hallucinate during complex visual tasks. Students will compile an image dataset annotated with multiple geographical features and human-like deduction steps. The project will involve testing different VLMs and designing multi-step prompting or brainstorming frameworks to guide the AI in cross-verifying visual clues iteratively, thereby improving its inference accuracy."
+  },
+  {
+    "file": "Dr_ChangwuHUANG_FYP-Topics (2026).docx",
+    "supervisor": "Changwu HUANG",
+    "title": "Evaluating and Improving Procedural Fairness in Machine Learning using Explainable AI",
+    "description": "As machine learning (ML) systems are increasingly deployed in high-stakes decision-making domains such as finance, hiring, and criminal justice, ensuring algorithmic fairness has become critical. Most existing work focuses on distributive fairness, which evaluates whether the outcomes of ML models are fair across different individuals or groups. However, another important dimension, procedural fairness, which concerns whether the decision-making process itself treats individuals or groups fairly, remains under-studied. This project explores how Explainable Artificial Intelligence (XAI) techniques can be used to evaluate and improve procedural fairness in ML models. XAI methods, such as SHAP and Integrated Gradients, can reveal feature influence and offer insights into the model’s decision process. Based on recent work by Wang et al. (2026), which proposes a framework to evaluate Group Procedural Fairness (GPF) using XAI methods, this project aims to extend the study in several directions. First, students will investigate Individual Procedural Fairness, which evaluates whether similar individuals are treated through similar decision-making processes. Second, the relationship between individual procedural fairness and group procedural fairness will be analyzed through experimental studies on benchmark fairness datasets. Finally, students will explore and implement methods to mitigate procedural unfairness, considering both individual-level and group-level fairness perspectives. Through this project, students will gain hands-on experience in fairness-aware machine learning, explainable AI, and empirical evaluation of ML systems, while contributing to responsible and trustworthy AI."
+  },
+  {
+    "file": "Dr_ChangwuHUANG_FYP-Topics (2026).docx",
+    "supervisor": "Changwu HUANG",
+    "title": "Towards Distributive and Procedural Fairness in Machine Learning",
+    "description": "Machine learning (ML) models are increasingly used in critical decision-making scenarios such as loan approval, hiring, and criminal justice. Ensuring that these systems make fair decisions is therefore a vital research topic. Fairness is often studied from two perspectives: distributive fairness, which focuses on whether the prediction outcomes are fair across different groups, and procedural fairness, which focuses on whether the decision-making process itself treats different groups fairly. At present, most existing fairness-aware machine learning research focuses primarily on improving distributive fairness, while procedural fairness has received relatively limited attention. However, recent studies suggest that improving fairness in outcomes does not necessarily guarantee fairness in the decision process. This project aims to investigate methods for improving both distributive and procedural fairness simultaneously in machine learning models. Students will first study commonly used distributive fairness metrics (e.g., Demographic Parity, Equal Opportunity) and procedural fairness evaluation methods based on Explainable Artificial Intelligence (XAI) techniques. They will then conduct experiments on benchmark fairness datasets to analyze the relationship between the two types of fairness. Finally, students will explore and implement approaches to mitigate unfairness during pre-processing, model training or post-processing, with the goal of improving both distributive and procedural fairness of the model. This project provides students with practical experience in fairness-aware machine learning, explainable AI, and experimental evaluation of ML systems, and allows them to contribute to the field of responsible and trustworthy AI."
+  },
+  {
+    "file": "Dr_ChangwuHUANG_FYP-Topics (2026).docx",
+    "supervisor": "Changwu HUANG",
+    "title": "Generating Human-Friendly Explanations for Machine Learning Models Using LLMs",
+    "description": "Explainable Artificial Intelligence (XAI) aims to make machine learning models more transparent and understandable by revealing how different input features influence model predictions. Many widely used XAI methods, such as SHAP and LIME, can generate feature attribution scores that indicate the importance of different variables in a model’s decision. However, the outputs of these methods are often presented in the form of numerical values or technical visualizations, which can be difficult for non-expert users to interpret. Recent advances in Large Language Models (LLMs) provide new opportunities to bridge this gap. LLMs possess strong natural language understanding and generation capabilities, enabling them to transform complex technical information into clear and accessible explanations. By combining XAI techniques with LLMs, it may be possible to automatically generate explanations that are easier for humans to understand, thereby improving the usability and transparency of AI systems. This project aims to investigate how LLMs can be used to convert technical XAI outputs into human-friendly explanations. Students will first develop machine learning models on benchmark datasets and generate explanations using standard XAI techniques such as SHAP or LIME. Then, they will design methods to integrate LLMs (e.g., GPT-based models or open-source models such as LLaMA) to transform these explanations into natural language descriptions. Finally, students will conduct experiments to evaluate the quality of the generated explanations in terms of clarity, usefulness, and human understanding. Through this project, students will gain hands-on experience with machine learning models, explainable AI methods, and large language models, while exploring how generative AI can improve the interpretability of AI systems."
+  },
+  {
+    "file": "Dr_ChangwuHUANG_FYP-Topics (2026).docx",
+    "supervisor": "Changwu HUANG",
+    "title": "Explainable Methods for Large Language Models",
+    "description": "Large Language Models (LLMs) have achieved impressive performance across many natural language processing tasks, including text generation, question answering, and summarization. Despite their strong capabilities, these models are often considered “black boxes” as it is difficult to understand how they arrive at particular predictions or generated outputs. This lack of transparency raises important concerns about trust, reliability, and accountability in AI systems. As a result, explainability for LLMs has become an increasingly important research topic in the field of trustworthy artificial intelligence. This project aims to conduct a systematic literature review of existing explainability methods designed for Large Language Models. Students will explore different research approaches that attempt to interpret or explain the internal behavior and decision-making processes of LLMs. The goal is to identify and categorize major types of explanation techniques, analyze their advantages and limitations, and summarize current research challenges and future directions in this rapidly evolving area. Through this project, students will gain a deeper understanding of explainable artificial intelligence, the architecture of modern language models, and the challenges of interpreting complex neural networks. The outcome of the project will be a structured literature review that summarizes existing explainability techniques for LLMs, critically analyzes their strengths and limitations, and highlights promising directions for future research in explainable and trustworthy AI."
+  },
+  {
+    "file": "Dr_ChangwuHUANG_FYP-Topics (2026).docx",
+    "supervisor": "Changwu HUANG",
+    "title": "Evaluating the Faithfulness of Chain-of-Thought Reasoning in Large Language Models",
+    "description": "Large Language Models (LLMs) have recently demonstrated strong capabilities in solving complex reasoning tasks through Chain-of-Thought (CoT) prompting, which encourages models to generate intermediate reasoning steps before producing a final answer. This approach has been shown to improve performance on tasks such as mathematical reasoning, logical inference, and commonsense reasoning. However, an important open question is whether these generated reasoning steps faithfully reflect the model’s actual internal reasoning process, or whether they simply provide plausible explanations that appear convincing to humans. This issue has attracted increasing attention in explainable artificial intelligence and trustworthy AI. This project aims to investigate the faithfulness of CoT reasoning in large language models through empirical evaluation. Students will first study existing methods for eliciting and analyzing CoT explanations, as well as recent research on explanation faithfulness. They will then design experiments to examine the relationship between generated reasoning steps and final predictions, for example by modifying, removing, or perturbing parts of the reasoning process and observing the effect on model outputs. Benchmark reasoning datasets such as GSM8K and commonsense reasoning tasks will be used to evaluate model behavior under different prompting strategies. Finally, students will analyze the extent to which CoT explanations reflect genuine reasoning rather than post-hoc rationalization. Through this project, students will gain hands-on experience with LLMs, reasoning benchmarks, and evaluation methods for explainable AI, while contributing to an important research direction in trustworthy AI."
+  },
+  {
+    "file": "Dr_ChunyanJi_FYP-Topics_2026.pdf",
+    "supervisor": "Dr.ChunyanJi",
+    "title": "PredictionofCancerDrugSensitivity",
+    "description": "Cancerisoneofthemostchallengingdiseasesintheworldthatcauses millionsofdeathseachyear.Drugdiscoveryplaysacrucialroleincancer treatmentandprecisionmedicine.Thetraditionalmethodsfordiscovering anti-cancerdrugsaremainlybasedonanimalexperimentsanddrug screening,butthesemethodsareexpensiveandlabor-intensive.Thelatest advancesinpharmacogenomicshavedevelopedseveraldatabases,suchas theCancerCellLineEncyclopedia(CCLE)andtheGenomicsofDrug SensitivityinCancer(GDSC),whichprovidegenome-widedataoncancer celllinesanddrugresponsestargetingthesecelllines.Thesevaluable resourcesenableresearcherstostudydrugresponsemechanismsincancer treatmentandhavebeenwidelyusedtoestablishmachinelearning methodsforpredictingCancerDrugResponse(CDR). Thisprojectistoresearchwiththetopicofhowtoutilizethemulti-source propertiesofdrugstoimprovethepredictionaccuracyofCancerDrug Response."
+  },
+  {
+    "file": "Dr_ChunyanJi_FYP-Topics_2026.pdf",
+    "supervisor": "Dr.ChunyanJi",
+    "title": "DecodingWildlifeVocalizationsthroughMachineLearning",
+    "description": "Thisresearchprojectexploresthefascinatingfieldofbio-acousticsby investigatinghowmachinelearningcanbeusedtodecodeanimal communication.Theprimaryobjectiveistoanalyzeanimal vocalizations—suchasbirdsongsormammalcalls—tounderstandtheir behavioralcontextortoclassifyspeciesbasedonsound. Studentswillbeginbyconductingaliteraturereviewofrecentstudiesin animalvoiceresearchtounderstandthecurrentstate-of-the-art methodologies.Theywillthenidentifyandaccessrelevantpublic bio-acousticdatabases(e.g.,Xeno-Canto,MacaulayLibrary)tosourceand curateasuitabledataset.Akeytaskwillbetoreproduceabaselinemodel fromarecent,high-impactpapertoestablishaperformancebenchmark. Finally,theprojectwillfocusondevelopingandtestingnovelstrategiesto improvethemodel'sclassificationorpredictionaccuracy.Thismay involveexploringdifferentfeatureextractiontechniques(e.g.,MFCCs, spectrograms),dataaugmentation,oradvanceddeeplearning architectures."
+  },
+  {
+    "file": "Dr_ChunyanJi_FYP-Topics_2026.pdf",
+    "supervisor": "Dr.ChunyanJi",
+    "title": "DecodingCatandDogVocalizationsbyMachineLearning",
+    "description": "Thisprojectaimstoapplymachinelearningtechniquestoanalyzethe vocalizationsofdomesticcatsanddogs.Thecoreobjectiveistodevelop arobustclassificationsystemcapableofnotonlydistinguishingbetween catmeowsanddogbarks,butalsoidentifyingtheemotionalstate, contextualmeaningbehindthesesounds(e.g.,hunger,playfulness, distress,aggression),oridentifyingtheageofthepets. Studentswillbeginbyreviewingtheexistingliteratureoncanineand felinebioacousticstounderstandcurrentfindingsinemotionrecognition andvocalizationpatterns.Theywillthensourceandcompileaudio datasetsfrompublicrepositories(e.g.,Crowdsourcedpetsounddatasets, Zenodo,ortheMacaulayLibrary)andperformdatacleaningand preprocessing.Acriticalphaseoftheprojectinvolvesreproducinga state-of-the-artmodelfromarecentacademicpapertoestablisha performancebaseline.Thenstudentswillenhancethismodel'spredictive accuracybyexperimentingwithadvancedtechniquessuchastransfer learning,customdataaugmentationstrategiesforaudio,ornovelacoustic featureengineering."
+  },
+  {
+    "file": "Dr_ChunyanJi_FYP-Topics_2026.pdf",
+    "supervisor": "Dr.ChunyanJi",
+    "title": "AIAgentforPersonalizedPythonProgrammingLearning",
+    "description": "ThisprojectinvitesstudentstodesignanddevelopanAI-powered intelligentagentcapableofteachingPythonprogrammingtobeginners. Thegoalistocreateaninteractivelearningcompanionthatcan understanduserqueries,providepersonalizedcodingguidance,explain programmingconcepts,andassistwithdebugging—simulatingthe experienceofhavingaone-on-onetutor. StudentswillresearchexistingeducationalAIsystems,intelligenttutoring systems,andthepedagogicalprinciplesbehindeffectiveprogramming instruction.Theywillthendesigntheagent'sarchitecture,whichmay integratenaturallanguageprocessing(NLP)forunderstandingstudent questions,aknowledgebaseofPythonconceptsandcommonerrors,and afeedbackmechanismforcodereview.Implementtheagent'sabilityto generateclear,age-appropriateexplanationsandprovideprogressivehints ratherthansimplygivingawayanswers.Theprojectwillalsoexplore howtheagentcanadaptitsteachingstylebasedonthelearner's demonstratedskilllevelandcommonmisconceptions. Studentswillgainhands-onexperiencewithNLPframeworks(suchas LangChainorRAGarchitectures),promptengineering,andtheethical considerationsofAIineducation."
+  },
+  {
+    "file": "Dr_ChunyanJi_FYP-Topics_2026.pdf",
+    "supervisor": "Dr.ChunyanJi",
+    "title": "AnAIHealthAssistantforUniversityStudentsandFaculty",
+    "description": "Thisprojectaimstodevelop\"CampusMed,\"anAI-poweredintelligent agentdesignedspecificallytohelpuniversitystudentsandfacultynavigate health-relatedchallengeswithinthecampusecosystem.Whenusersfeel unwell,theagentprovidescomprehensiveassistance—notonly recommendingappropriateon-campushealthservicesandfacilitating appointments,butalsohandlingessentialacademiccommunicationssuch asclassabsencenotifications. Studentswillresearchthespecifichealthcareandacademicneedsof campuscommunities,studyingexistinguniversityhealthservicemodels, andreviewingAIapplicationsinstudentwellnesssupport.Theywillthen designtheagent'sarchitecture,whichmayincludenaturallanguage processing(NLP)forunderstandingsymptomdescriptions,integrationwith campushealthcenterorhospitalAPIsforreal-timeappointment scheduling,andmedicationsorderingfrompharmacy.Theagenthasthe abilitytogenerateandsendclassabsencerequestsonbehalfofthestudent, completewithrelevanthealthcontext(whileprotectingprivacy),andnotify professorsoracademicadvisorsthroughintegrationwiththeuniversity's emailorlearningmanagementsystem.Theagentwillalsotrackthese communications,providinguserswithconfirmationofsubmissionandany follow-upinstructionsfromfaculty. Studentswillgainhands-onexperiencewithAPIintegration,automated communicationsystems,andthecriticalimportanceofdesigning trustworthyAIthatprotectsuserprivacywhilehandlingsensitivehealth andacademicinformationresponsibly."
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Spatial-Temporal Kriging for Urban Traffic State Estimation",
+    "description": "Understanding traffic conditions across an entire city is crucial for efficient transportation management, urban planning, and intelligent mobility systems. However, due to the high cost of hardware and deployment, it is impractical to install sensors at every intersection and road segment. As a result, traffic data is often only available at limited locations, leaving large portions of the network unobserved. This project focuses on spatial-temporal kriging, a methodology that aims to estimate traffic states at unobserved locations using data collected from a subset of observed positions. The key challenge lies in effectively capturing the complex spatial and temporal dependencies inherent in traffic systems, which are influenced by both the road network structure and dynamic traffic patterns over time. In this project, we will develop a deep learning-based approach for spatial-temporal modeling and time series analysis. The model will leverage information from the road network and historical traffic data to learn relationships between different locations and time steps. Using this learned representation, the system will infer traffic conditions (e.g., speed, flow, or congestion levels) at locations where no sensors are deployed. Students involved in this project will gain experience in: Spatial-temporal data modeling Deep learning for time series analysis Graph-based representations of road networks Real-world traffic data analysis and prediction This project is ideal for students interested in machine learning, data science, and smart city applications."
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Hybrid Physical-Data Driven Modeling for Traffic Prediction under Incidents",
+    "description": "Accurate traffic state prediction is essential for a wide range of applications, including navigation, congestion management, and intelligent transportation systems. While significant progress has been made in this area, most existing approaches assume relatively stable traffic patterns and do not explicitly account for the impact of incidents such as accidents, road closures, or unexpected disruptions. These events can significantly alter normal traffic behavior and temporarily change spatial-temporal dependencies across the road network. This project focuses on traffic state prediction under incident conditions, aiming to better understand and model how incidents affect traffic dynamics. The key challenge is to capture the complex and dynamic spatial-temporal relationships between different regions of the network when disruptions occur. In this project, students will develop a hybrid modeling approach that integrates domain knowledge of traffic systems with data-driven deep learning methods. The model will leverage both physical insights (e.g., traffic flow characteristics) and historical data to improve prediction accuracy under abnormal conditions. This project is suitable for students interested in machine learning, transportation systems, and real-world data modeling under dynamic environments."
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Counterfactual Explanations for Spatial-Temporal Forecasting",
+    "description": "Deep learning models have achieved strong performance in spatiotemporal forecasting tasks such as traffic and demand prediction. However, these models often lack interpretability, making it difficult to understand how their predictions can inform real-world decision-making. Counterfactual explanations offer a powerful approach in explainable AI by addressing “what-if” questions—specifically, identifying what changes in current conditions would lead to a desired future outcome. This project focuses on generating counterfactual explanations for deep learning-based spatiotemporal forecasting. Rather than only predicting future states, the goal is to produce actionable insights that support decision-making and strategic planning. A key challenge is to capture complex spatiotemporal dependencies while identifying feasible and effective interventions that can influence future outcomes. In this project, students will develop methods that integrate domain knowledge of spatiotemporal systems with deep learning models to generate meaningful and efficient counterfactual scenarios. The approach aims to identify optimal intervention strategies that guide the system toward desired targets.  This project is suitable for students interested in explainable AI, deep learning, and decision-oriented data analysis."
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Fine-Grained Spatiotemporal Forecasting of Influenza in Urban Environments",
+    "description": "Accurately predicting influenza outbreaks is crucial for effective public health planning and resource allocation in urban environments. Traditional approaches often focus on forecasting the total number of infected individuals at the city level. However, such coarse-grained predictions may overlook important local variations in disease spread. This project aims to develop fine-grained spatiotemporal models to predict influenza incidence at the regional level within a city (e.g., neighborhoods or districts). By moving beyond aggregate forecasts, the goal is to capture localized patterns of infection and provide more actionable insights for targeted interventions. A key focus of this project is to investigate the role of geographical information—such as spatial proximity, mobility patterns, and regional characteristics—in improving prediction accuracy. Incorporating geo-information can help model how influenza propagates across different areas and identify high-risk regions more effectively. Students working on this project will explore deep learning or data-driven approaches that integrate spatiotemporal dynamics with geographic features. The ultimate objective is to build models that not only achieve high predictive performance but also support informed decision-making in public health."
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Multi-Variate Time Series Analysis for Financial Data",
+    "description": "Financial markets generate large volumes of complex time series data, where each stock can be viewed as a variable evolving over time. Capturing the relationships between different stocks is crucial, as their prices and behaviors are often interdependent. In addition, each stock itself consists of multiple attributes (e.g., price, trading volume, and percentage change), and understanding the correlations among these variables is equally important. This project focuses on multi-variate time series analysis for financial data. The goal is to model both inter-stock relationships and intra-stock feature dependencies to better understand market dynamics. A key challenge is to effectively capture these complex, high-dimensional correlations over time. In this project, students will develop deep learning-based models to learn meaningful patterns from historical financial data. These models will be used to analyze market behavior, support prediction tasks, and potentially generate data-driven trading strategies. Techniques may include sequence modeling and advanced neural network architectures designed for time series data. This project is ideal for students interested in machine learning, financial data analysis, and quantitative modeling"
+  },
+  {
+    "file": "Dr_Guanyao_Li_FYP-Topics-revised.docx",
+    "supervisor": "Guanyao Li",
+    "title": "Spatial-Temporal Kriging for Urban Traffic State Estimation",
+    "description": "Predicting the next location of individuals is a fundamental task with wide-ranging applications in urban computing, including traffic management, location-based services, and public safety. Accurate next location prediction enables smarter city planning and more responsive, personalized services. Most existing approaches rely heavily on learning spatiotemporal patterns from individual mobility trajectories, often assuming that future movements will follow historical behavior. However, such patterns are inherently dynamic and can be significantly influenced by external factors, such as traffic disruptions, public events, or unexpected incidents. As a result, models that depend solely on historical trajectories may fail to generalize under changing conditions. This project aims to develop models that capture dynamic spatiotemporal dependencies in user mobility while explicitly accounting for the impact of external incidents. By incorporating contextual signals—such as event information, environmental changes, or anomalies—the goal is to better understand how user movement patterns adapt in response to real-world disruptions. Students working on this project will explore data-driven and deep learning approaches that integrate trajectory data with external contextual information. The objective is to build robust next location prediction models that remain accurate under dynamic and evolving urban conditions, ultimately supporting more adaptive and resilient city-scale applications."
+  },
+  {
+    "file": "Dr_JiaxingChen_FYP-Topics.docx",
+    "supervisor": "XXXXX",
+    "title": "Decoding Cellular State Trajectories in the Tumor Microenvironment",
+    "description": "The Tumor Microenvironment (TME) is a heterogeneous, dynamic ecosystem that dictates cancer progression and therapeutic response. While single-cell technologies provide high-resolution snapshots, they often fail to capture the continuous evolutionary paths of cellular states. This research proposes a robust framework for cellular trajectory inference within the TME to map differentiation and state-transition pathways. By integrating single-cell RNA sequencing with spatial transcriptomics, we aim to reconstruct the pseudotemporal dynamics of key immune populations, particularly T-cell exhaustion and macrophage polarization. We will identify critical regulatory checkpoints driving pro-tumorigenic transitions. Unraveling these dynamic cellular journeys will reveal novel biomarkers for immunotherapy resistance and suggest intervention points to reprogram the TME. Ultimately, this study bridges the gap between static genomic profiles and dynamic cellular behavior, advancing precision oncology."
+  },
+  {
+    "file": "Dr_JiaxingChen_FYP-Topics.docx",
+    "supervisor": "XXXXX",
+    "title": "Graph Motif Mining in Spatial Transcriptomics to Decode Functional Tissue Niches",
+    "description": "Spatial transcriptomics reveals gene expression within tissue context, yet most analyses overlook recurring spatial motifs—conserved patterns of cellular arrangement or co-expression that encode functional tissue programs. This research proposes a motif discovery framework for spatial transcriptomics that integrates graph mining, spatial statistics, and deep learning to detect multi-scale patterns. We will represent tissue as a spatial graph where nodes encode transcriptomic profiles and edges capture physical or functional proximity, then apply subgraph isomorphism and contrastive learning to identify motifs enriched in specific phenotypes. Discovered motifs will be annotated via enrichment analysis for pathway activity, cell-type composition, and CCI signatures. By formalizing spatial pattern discovery, this work bridges descriptive spatial atlasing and mechanistic understanding of tissue organization, enabling motif-guided intervention strategies in cancer and beyond."
+  },
+  {
+    "file": "Dr_JiaxingChen_FYP-Topics.docx",
+    "supervisor": "XXXXX",
+    "title": "PlasmidLM: A Foundation Model for Comprehensive Sequence Annotation in Plasmids",
+    "description": "Plasmids harbor diverse functional sequences—from antibiotic resistance genes to origins of replication and mobile element boundaries—yet >60% of plasmid sequence space remains unannotated due to mosaic architecture and limited homology. We propose PlasmidLM, a foundation model pretrained on >500K dereplicated plasmid sequences using nucleotide-level tokenization and multiscale transformer architecture. PlasmidLM learns the genomic \"grammar\" of mobile elements to enable zero-shot annotation of: (1) protein-coding genes via embedding-space similarity; (2) regulatory elements (promoters, RBS, terminators) through attention pattern decoding; (3) structural motifs (oriV, oriT, IRs) via motif-aware pretraining; and (4) mobile module boundaries using change-point detection on attention weights. By transforming plasmid dark matter into interpretable functional maps, this work accelerates antimicrobial resistance surveillance, synthetic biology, and mechanistic studies of horizontal gene transfer."
+  },
+  {
+    "file": "Dr_JiaxingChen_FYP-Topics.docx",
+    "supervisor": "XXXXX",
+    "title": "A Computational Framework for Phasing Expression in Single-Cell Data",
+    "description": "Single-cell RNA sequencing reveals cellular heterogeneity but obscures parental allele origins, limiting insights into genomic imprinting, and parent-of-origin disease mechanisms.  We propose a novel deep learning framework that integrates scRNA-seq with complementary omics layers—such as single-cell ATAC-seq, DNA methylation, or spatial transcriptomics—to infer parental origin without dependence on heterozygous SNPs. Our model will learn haplotype-aware representations by capturing coordinated epigenetic and transcriptional patterns associated with maternal or paternal alleles. Successfully resolving parental origin will advance understanding of epigenetic regulation, embryonic development, and allelic dysfunction in complex diseases. This work bridges transcriptomics with broader molecular landscapes, offering a scalable, genotype-agnostic tool for precision functional genomics in heterogeneous tissues."
+  },
+  {
+    "file": "Dr_JiaxingChen_FYP-Topics.docx",
+    "supervisor": "XXXXX",
+    "title": "AI-Agent-Guided Virtual Cells: Autonomous Discovery of Cellular Dynamics via Deep Learning",
+    "description": "Virtual cells—computational models simulating multi-scale biological processes—offer a powerful platform for in silico experimentation. However, manually designing simulations and interpreting high-dimensional outputs remains a bottleneck. Meanwhile, AI agents capable of autonomous reasoning and interaction have emerged but lack grounding in biophysical reality. We propose a novel framework integrating mechanistic virtual cell models with deep learning-based AI agents. These agents will autonomously design perturbations, navigate simulation parameter spaces, and formulate testable hypotheses by learning from multi-omics readouts and prior knowledge. The virtual cell provides a biologically constrained environment for agent training, while the agent accelerates discovery by identifying non-intuitive regulatory patterns and optimal experimental conditions. This synergy aims to transform static simulations into interactive, goal-directed discovery engines. By bridging mechanistic modeling with agentic AI, this work will advance predictive systems biology and provide a scalable platform for accelerating biomedical research while reducing reliance on costly wet-lab iterations."
+  },
+  {
+    "file": "Dr_WentaoCheng_FYP-Topics.docx",
+    "supervisor": "Wentao Cheng",
+    "title": "Towards Efficient and Robust Feed-forward 3D Reconstruction via Geometry-Aware Filtering",
+    "description": "Recent breakthroughs in 3D foundation models, notably DUSt3R (Wang et al., 2024) and VGGT (Xu et al., 2024), have transformed multi-view geometry by enabling 3D structure recovery in a fully feed-forward, optimization-free manner. By replacing traditional iterative Structure-from-Motion (SfM) pipelines with global-attention architectures, these models jointly estimate camera poses and scene geometry in a single pass, offering superior cross-scene generalization. However, two critical limitations persist: the quadratic computational cost of global attention restricts scalability as input sequences grow, and the lack of explicit geometric verification makes these systems susceptible to \"distractors\"—such as moving objects or lighting variations—that corrupt feature aggregation and lead to pose drift.   This project investigates lightweight strategies to enhance both efficiency and robustness by exploring distractor-aware filtering, confidence-guided feature selection, and simplified geometric consistency constraints. Rather than replacing the feed-forward paradigm, the objective is to augment existing architectures with geometry-aware mechanisms that preserve scalability under long sequences and ensure resilience against adverse visual conditions. By mitigating the impact of transient outliers while reducing unnecessary global computation, this research seeks to bridge the gap between high-speed inference and the rigorous structural integrity required for real-world 3D reconstruction. ________________________________________"
+  },
+  {
+    "file": "Dr_WentaoCheng_FYP-Topics.docx",
+    "supervisor": "Wentao Cheng",
+    "title": "Author-Controllable and Editable Scientific Figure Generation based on AutoFigure-Edit",
+    "description": "Scientific method diagrams are essential for conveying research ideas, yet producing publication-quality figures remains a time-consuming task requiring significant design expertise. Current AI generation tools often produce static raster images that lack precision and post-generation editability. To address this, the AutoFigure-Edit (Wang et al., 2026) framework introduces a training-free, agentic paradigm. By coordinating Large Language Models (LLMs) for layout planning and vision models for object decomposition, it transforms research text into structured, native SVG (Scalable Vector Graphics) representations. This modular approach—relying on algorithmic orchestration rather than opaque end-to-end training—provides a reproducible foundation for building sophisticated visualization systems that achieve top-conference standards. This project aims to develop an advanced scientific figure generation system that prioritizes author-led controllability and SVG-based editability. Building upon the Designer-Critic iterative workflow, the research focuses on leveraging LLMs to parse methodology descriptions into key entities while implementing mechanisms for authors to specify granular design preferences, such as color, font, and layout. Furthermore, the system will develop a synthesis pipeline to generate high-quality alternative designs, enhancing originality and reducing visual imitation. The expected outcome is a practical, efficient solution that bridges the gap between automated AI generation and the precise, adjustable needs of academic creators, ultimately reducing figure creation costs while improving the usability of AI-assisted academic writing. ________________________________________"
+  },
+  {
+    "file": "Dr_WentaoCheng_FYP-Topics.docx",
+    "supervisor": "Wentao Cheng",
+    "title": "Efficient Feature Matching via Mamba Architecture",
+    "description": "Feature matching is critical for tasks like visual localization and SfM, but Transformer-based matchers face significant quadratic complexity issues in high-resolution scenarios. To solve this, Jamaba (Kim et al., 2025) introduces a hybrid architecture combining the linear complexity of State Space Models (SSMs) with the representation power of self-attention. By using a Mamba-based design, Jamaba achieves an optimal balance between computational efficiency and inference speed for memory-constrained geometric matching. This project investigates Jamaba’s adaptability in challenging environments, focusing on how the hybrid SSM-Transformer structure handles extreme viewpoint changes and repetitive patterns. By analyzing its internal state-transition mechanisms, the study seeks to optimize feature consistency and spatial accuracy across varying image scales. The project will evaluate the model’s performance in resource-limited settings, providing insights into building resilient matching pipelines for practical, real-world vision applications. ________________________________________"
+  },
+  {
+    "file": "Dr_WentaoCheng_FYP-Topics.docx",
+    "supervisor": "Wentao Cheng",
+    "title": "Dynamic Reliability Filtering for Accelerated and Robust Lightweight Matching",
+    "description": "Feature matching is a cornerstone of visual SLAM and Structure-from-Motion (SfM), but achieving a balance between high precision and low latency remains a challenge for resource-constrained devices. XFeat (Potje et al., 2024) addresses this by introducing a lightweight architecture that processes image pyramids with minimal computational overhead. However, a significant limitation of the current XFeat framework is its rigid pruning strategy in dense matching: it discards a fixed percentage of candidate patches based on a static reliability threshold. This non-adaptive approach often leads to redundant computation in texture-less regions or, conversely, insufficient coverage in highly detailed, complex environments. This project proposes an adaptive refinement mechanism for the XFeat architecture to improve its efficiency and matching robustness. The research will focus on developing a dynamic filtering strategy that adjusts the patch selection density based on real-time scene complexity and reliability distribution. By replacing the constant-ratio pruning with a content-aware selection process, the system aims to preserve more keypoints in discriminative areas while aggressively pruning uninformative regions. The project will evaluate the proposed adaptive model on standard benchmarks to demonstrate superior performance in diverse scenarios, such as varying illumination and significant viewpoint shifts. The expected outcome is a more flexible and efficient matching pipeline suitable for high-speed, real-time vision applications on mobile and embedded platforms. ________________________________________"
+  },
+  {
+    "file": "Dr_WentaoCheng_FYP-Topics.docx",
+    "supervisor": "Wentao Cheng",
+    "title": "Training-Free Real Image Editing via Optimized Flow Trajectory Manipulation",
+    "description": "The emergence of Flow Matching (FM) models, such as Stable Diffusion 3 (Esser et al., 2024) and FLUX.1, has set new benchmarks for high-resolution image synthesis by utilizing Rectified Flow Transformers. However, editing real-world images using these models remains challenging due to the accumulation of truncation errors in Ordinary Differential Equation (ODE) solvers during the inversion process. Unlike traditional U-Net diffusion models, Flow-based Transformers require more precise trajectory control to maintain structural consistency. Existing training-free methods often struggle with \"content leakage\" or \"geometric distortion\" when performing non-rigid edits—such as changing an object's pose or texture—without the aid of expensive fine-tuning or secondary optimization.  This project aims to develop a high-fidelity, training-free image editing system based on the Rectified Flow framework. Inspired by the FlowEdit (Pan et al., 2024) and Stable Flow (Wang et al., 2025) paradigms, the research will focus on implementing a \"source-to-target\" flow manipulation mechanism that bypasses the need for complex latent inversion. Specifically, the system will explore vital layer modulation within the Flow Transformer to isolate edited regions while preserving the original background. The project will evaluate the proposed method’s ability to handle semantic modifications (e.g., \"change a cat to a tiger\") while maintaining pixel-level alignment. The final outcome will be an interactive Python-based tool that enables users to perform complex edits on real photos by simply manipulating inference-time flow trajectories, achieving a superior balance between text-alignment and image fidelity."
+  },
+  {
+    "file": "Dr_Xiubin_Fan_FYP-Topics.docx",
+    "supervisor": "Xiubin Fan (Starry)",
+    "title": "Efficient Radio Map Construction for Indoor Localization",
+    "description": "Fingerprint-based indoor localization relies on a pre-built radio map that records signal features (e.g., WiFi RSS, BLE RSS, geomagnetic field intensity) at densely surveyed reference points. However, constructing a high-quality radio map is labor-intensive and time-consuming, as it typically requires manual site surveys across the entire target area. This significantly hinders the scalability and practical deployment of fingerprint-based localization systems. This project aims to explore efficient radio map construction methods that reduce the surveying effort while maintaining localization accuracy. Students will investigate approaches such as spatial interpolation (e.g., Gaussian Process Regression, Kriging), crowdsourced data collection with trajectory reconstruction, or signal propagation model-based estimation to generate dense radio maps from sparse measurements. The system will be implemented and evaluated in campus buildings using WiFi or BLE signals, comparing the trade-off between survey effort and positioning accuracy."
+  },
+  {
+    "file": "Dr_Xiubin_Fan_FYP-Topics.docx",
+    "supervisor": "Xiubin Fan (Starry)",
+    "title": "BLE-Based Real-Time Asset Tracking System for Indoor Environments",
+    "description": "Tracking the location of assets (e.g., equipment, inventory, parcels) in indoor environments such as warehouses, hospitals, and subway stations remains a challenging problem. Bluetooth Low Energy (BLE) beacons offer a cost-effective and energy-efficient solution for indoor asset tracking. This project aims to design and implement a BLE-based real-time asset tracking system. Students will deploy BLE beacons in a designated indoor area, develop a signal-strength-based localization algorithm (e.g., trilateration or model-based methods using the log-distance path loss model), and build a web-based dashboard to visualize asset locations in real time. The project will also investigate practical challenges such as signal fluctuation due to human body blockage and multipath effects."
+  },
+  {
+    "file": "Dr_Xiubin_Fan_FYP-Topics.docx",
+    "supervisor": "Xiubin Fan (Starry)",
+    "title": "Crowdsourced Indoor Spatial Data Collection Using Smartphone Sensors",
+    "description": "Constructing and maintaining up-to-date indoor maps is essential for indoor navigation services, yet manual surveying is labor-intensive and does not scale. Crowdsourcing, where ordinary users contribute sensor data as they walk through buildings, offers a scalable alternative. This project aims to develop a mobile application that collects IMU (accelerometer, gyroscope) and WiFi/BLE signal data from users' smartphones as they navigate indoor spaces. The collected data will be processed using pedestrian dead reckoning (PDR) and signal-based landmark detection to reconstruct indoor trajectories and spatial features. Students will design the data collection app, implement trajectory estimation algorithms, and evaluate the quality of the crowdsourced data against ground-truth floorplans."
+  },
+  {
+    "file": "Dr_Xiubin_Fan_FYP-Topics.docx",
+    "supervisor": "Xiubin Fan (Starry)",
+    "title": "WiFi Fingerprint-Based Indoor Localization for Smart Campus",
+    "description": "Indoor localization is a fundamental building block for location-based services in smart campus applications such as indoor navigation, space management, and emergency response. WiFi fingerprinting is one of the most practical approaches, as it leverages existing WiFi access points (APs) already deployed across campus buildings without requiring additional hardware. This project aims to develop a WiFi fingerprint-based indoor localization system for campus buildings. Students will use smartphones to collect WiFi Received Signal Strength (RSS) data at known reference points to build a radio map, and then implement matching algorithms (e.g., k-nearest neighbors, weighted centroid, or lightweight neural networks) to estimate user locations in the online phase. The project will also investigate practical issues such as RSS temporal variation, heterogeneous devices, and AP density, and evaluate the system in terms of positioning accuracy and computational efficiency."
+  },
+  {
+    "file": "Dr_Xiubin_Fan_FYP-Topics.docx",
+    "supervisor": "Xiubin Fan (Starry)",
+    "title": "Smartphone-Based Human Activity Recognition for Smart Logistics",
+    "description": "Human activity recognition (HAR) using smartphone inertial sensors (accelerometer and gyroscope) has broad applications in health monitoring, fitness tracking, and logistics operations. In smart logistics, recognizing courier activities (e.g., walking, cycling, stair climbing, elevator riding) can help optimize delivery routes and monitor work safety. This project aims to develop a lightweight HAR system that runs on smartphones. Students will collect or use existing IMU datasets, extract time-domain and frequency-domain features, and train classification models (e.g., Random Forest, CNN, or lightweight neural networks) to recognize different activities. The project will also explore the challenge of cross-user generalization, where a model trained on one group of users is tested on unseen users."
+  },
+  {
+    "file": "FYP Projects-2026_DrSunnyJeong.docx",
+    "supervisor": "Sunny Jeong",
+    "title": "Machine Learning-Powered Tourism Business Simulation",
+    "description": "This project builds a machine learning-powered tourism business simulation. Traditionally, such simulations follow a 5-step process to train users on decision-making. This project adds machine learning to make the simulation more dynamic and reflect real-world complexities. *Tourist Behavior: Machine learning will simulate unpredictable tourist behavior based on real-world data (preferences, budget, etc.). *Market Prediction: The software will predict tourism demand and market trends so users can test different strategies.  *Personalized Learning: The simulation tailors the experience to each user based on their choices and performance.  Ref. www.edumundo.com www.interpretive.com"
+  },
+  {
+    "file": "FYP Projects-2026_DrSunnyJeong.docx",
+    "supervisor": "Sunny Jeong",
+    "title": "Developing an ML-Enhanced Business Intelligence System for SMBs",
+    "description": "This project equips students with both traditional Business Intelligence (BI) skills and the cutting-edge integration of Machine Learning (ML) into BI systems. Students will: Learn core BI concepts like data warehousing, data visualization, and analysis, explore how ML can boost BI functionalities for small businesses. This includes:  *Predicting customer behavior, sales, and market trends. *Segmenting customers for targeted marketing. Finally, students will design and implement an ML-powered BI system for a small business using a simplified case study. Ref. http://www.oracle.com/us/solutions/ent-performance-bi/business-intelligence/index.html https://www.sap.com/products/analytics/business-intelligence-bi.html"
+  },
+  {
+    "file": "FYP Projects-2026_DrSunnyJeong.docx",
+    "supervisor": "Sunny Jeong",
+    "title": "Web Based - UIC Alumni Map",
+    "description": "UIC alumni have been spreading all around the world. In this project, students will develop a visual analysis application that can depict the UIC alumni's information (region, profession). First, students will collect alumni’s information from each programme and analyze user needs. Then, Complete the final project using appropriate tools and a methodology. This project focuses on developing a user-friendly visual analysis application to explore the global reach and professional distribution of UIC alumni."
+  },
+  {
+    "file": "FYP Projects-2026_DrSunnyJeong.docx",
+    "supervisor": "Sunny Jeong",
+    "title": "Developing an e-Marketing System for Hotel Business",
+    "description": "This project delves into the world of e-Marketing (digital marketing) and its critical role in B2C businesses. Students will gain a comprehensive understanding of e-Marketing strategies and explore the potential of Information Technologies (IT) to enhance them. This project takes a step further by adding a Machine Learning (ML) to create a more personalized and effective customer relationship management (CRM) system: *Understanding e-Marketing and IT: Students will explore various e-Marketing channels and tactics, along with relevant IT solutions commonly used in B2C marketing efforts. *Machine Learning in e-Marketing: The project will delve into the application of ML for tasks such as Customer Segmentation, Predictive Analytics, Personalized Marketing Automation.  *Web Application Development: Students will then design and develop a web application that integrates CRM functionalities with ML capabilities. Ref.:www.managementstudyguide.com/e-marketing-and-customer-relationship-management.htm"
+  },
+  {
+    "file": "FYP Projects-2026_DrSunnyJeong.docx",
+    "supervisor": "Sunny Jeong",
+    "title": "A Lightweight AI System for Facial Skin Analysis and Personalized Skincare",
+    "description": "This project develops a simple AI-powered skincare analysis system using easily accessible sensors such as a camera and basic wearable devices. The system captures facial data through a webcam or smartphone camera. Facial images and short video clips are used to detect skin conditions such as wrinkles, texture, and facial tension.The collected data is preprocessed (e.g., image smoothing, noise reduction), and a machine learning model (such as a simple CNN) is used to classify skin conditions and estimate factors like skin elasticity and stress levels. Additional low-cost sensors (such as temperature or heart rate sensors) can be used to support the analysis of skin condition and stress. All data is stored in a structured database, and a simple dashboard visualizes the results, providing personalized skincare suggestions. This system demonstrates how AI and accessible technology can be used for basic skincare analysis and personalized recommendations.    Ref. imotions.com/blog/learning/research-fundamentals/emg-sensors-everything-you-need-to-know/ Ernest N Kamavuako, On the Applications of EMG Sensors and Signals, Sensors, 2022 pmc.ncbi.nlm.nih.gov/articles/PMC9611382/#:~:text=The%20EMG%20is%20also%20used,of%20EMG%20sensors%20and%20signals."
+  },
+  {
+    "file": "FYP Projects-2026_Dr_JudyFeng.docx",
+    "supervisor": "Unknown",
+    "title": "Implementation of Outcome-Driven Software for Study of C Programming",
+    "description": "This project is to develop a platform that help students learn C programming in a path of outcome-riven. When students use this software, they can study the knowledge for specific outcomes step-by-step, grasping the ledge of the fundamentals of C."
+  },
+  {
+    "file": "FYP Projects-2026_Dr_JudyFeng.docx",
+    "supervisor": "Unknown",
+    "title": "Implementation of Outcome-Driven Software for IT Training",
+    "description": "This project is to develop a platform that helps students learn the basics of IT knowledge on a path of outcome-driven. The software will help new computer science students learn basic computer operations and knowledge so that they can adapt to the major course study easily."
+  },
+  {
+    "file": "FYP Projects-2026_Dr_JudyFeng.docx",
+    "supervisor": "Unknown",
+    "title": "An Analysis of the Impact of Requirements Preciseness on AI Coding Correctness and Efficiency",
+    "description": "Vibe coding is an AI-assisted programming approach where developers describe what they want in a plain natural language, and AI generates the code. It allows iterative refinement without manually writing every line. This research analyzes the impact of description of requirements on the expectation of generated code and the efficiency."
+  },
+  {
+    "file": "FYP Projects-2026_Dr_JudyFeng.docx",
+    "supervisor": "Unknown",
+    "title": "An Analysis on the Effectiveness and Efficiency of AI Testing Tools",
+    "description": "AI testing tools are revolutionizing the software testing landscape by leveraging artificial intelligence and machine learning to automate and optimize testing processes. This project aims to check the effectiveness and efficiency of these testing tools."
+  },
+  {
+    "file": "FYP Projects-2026_Dr_JudyFeng.docx",
+    "supervisor": "Unknown",
+    "title": "Development of A Simple Operating System",
+    "description": "This project is to follow a book to make an operating system."
+  },
+  {
+    "file": "FYP Projects-2026_rickyhou.docx",
+    "supervisor": "Unknown",
+    "title": "Cross-domain Semantic Communications",
+    "description": "Semantic communication focuses on conveying meaning rather than merely transmitting raw data through communication systems. Communication modalities are typically classified into three categories: human-to-human (H2H), human-to-machine (H2M), and machine-to-machine (M2M). H2M semantic communication involves techniques that enable effective conveyance of meaning between humans and machines. M2M semantic communication refers to methods that efficiently connect machines to collaboratively accomplish a specific computational task. In this project, students are required to propose novel algorithms for semantic communication in either the H2M or M2M domain."
+  },
+  {
+    "file": "FYP Projects-2026_rickyhou.docx",
+    "supervisor": "Unknown",
+    "title": "Knowledge Reasoning in AI",
+    "description": "Current AI systems, particularly large language models and deep neural networks, often perform knowledge reasoning as opaque \"black boxes,\" where the internal decision-making processes remain largely inscrutable (even to their developers). This lack of transparency hinders trust, accountability, and debugging in critical applications. This project aims to investigate methods for enhancing the explainability and transparency of AI's knowledge reasoning processes, enabling more interpretable, trustworthy, and human-understandable reasoning pathways."
+  },
+  {
+    "file": "FYP Projects-2026_rickyhou.docx",
+    "supervisor": "Unknown",
+    "title": "Analysis and Management of Data Quality",
+    "description": "High-quality data is essential for reliable decision-making, operational efficiency, and value creation across business, production, and analytical processes—including applications in AI and machine learning. Data quality management encompasses systematic practices for profiling, cleansing, validating, standardizing, and continuously monitoring data to ensure it is accurate, complete, consistent, timely, valid, and unique. Quantifying data quality through well-defined metrics and scoring frameworks is a critical step in assessing whether datasets meet the specific requirements of their intended applications. In this project, students are required to design and implement a comprehensive data quality management process that quantifies data quality levels and determines whether the data satisfies the fitness-for-purpose criteria of target applications."
+  },
+  {
+    "file": "FYP Projects-2026_rickyhou.docx",
+    "supervisor": "Unknown",
+    "title": "Unified Ontology Framework of Knowledge Domains: Supporting Hierarchical Text Classification and Validation",
+    "description": "This research project develops a unified ontology framework across knowledge domains to support hierarchical text classification and validation. Most existing approaches rely heavily on supervised learning, which demands extensive labeled datasets that are costly and labor-intensive to acquire, curate, and maintain (often requiring frequent model retraining as new data emerges). In contrast, the proposed semi-supervised framework leverages human-curated ontologies as a reliable, pre-existing source of structured knowledge for data guidance, feature extraction, and maintenance, thereby substantially reducing the need for large-scale labeled corpora and minimizing retraining frequency. The model employs statistical feature extraction tailored to each domain while emphasizing the effective modeling and exploitation of ontological relationships (e.g., hierarchies, subsumption, and semantic alignments) within the classification pipeline to better mirror human conceptual understanding. By bridging structured knowledge representations with text processing, this approach advances semantic communication systems, enabling more accurate, comprehensive, and human-aligned capture of linguistic meaning."
+  },
+  {
+    "file": "FYP Projects-2026_rickyhou.docx",
+    "supervisor": "Unknown",
+    "title": "Agent-to-Agent Semantic Communication and Validation",
+    "description": "This research project develops a novel model for enabling effective semantic communication and mutual validation between autonomous AI agents without dependence on predefined data schemas or rigid structural agreements. Traditional multi-agent systems often rely on fixed protocols, shared ontologies, or standardized message formats (e.g., JSON schemas or explicit intent declarations), which limit flexibility, hinder interoperability across heterogeneous agents, and impose significant design overhead. In contrast, the proposed approach focuses on dynamic, meaning-centric exchanges (where agents infer, negotiate, and validate shared semantics directly from context, task goals, and emergent understanding) drawing inspiration from semantic communication paradigms that prioritize task-relevant meaning over raw data transmission. By achieving reliable agent-to-agent interaction and verifiable alignment in open, schema-free environments, this work advances scalable, trustworthy multi-agent collaboration for real-world applications such as distributed reasoning, autonomous workflows, and cross-platform agent ecosystems."
+  },
+  {
+    "file": "FYP Topics_Dr_Bingqing QU.docx",
+    "supervisor": "Bingqing Qu",
+    "title": "Video Search Using Dynamic Scene Graphs",
+    "description": "This project aims at finding a specific moment in a long video given a textual query. Students are required to design a framework to apply graph-based mathematical algorithms to accurately align a user's search query graph with the corresponding sub-graph hidden inside a long video, specifically, by converting both the video and the user's search query into these relationship graphs, the model can mathematically match the exact sequence of events. This project combines computer vision and natural language processing, providing valuable experience in multimodal learning."
+  },
+  {
+    "file": "FYP Topics_Dr_Bingqing QU.docx",
+    "supervisor": "Bingqing Qu",
+    "title": "Proactive Motion Forecasting via Semantic Micro-Queries",
+    "description": "This project aims at enhancing autonomous vehicle trajectory prediction by fusing physical spatial-temporal graphs with visual semantic intent. In this project, students will build an active \"micro-query\" video retrieval system. By continuously parsing multi-camera feeds into Spatial-Temporal Scene Graphs, the system will detect early semantic intent (e.g., a pedestrian looking at their phone). Students will design a Graph Attention Network to fuse these semantic activation vectors with physical trajectory data. This project combines computer vision and natural language processing, providing valuable experience in multimodal learning."
+  },
+  {
+    "file": "FYP Topics_Dr_Bingqing QU.docx",
+    "supervisor": "Bingqing Qu",
+    "title": "Implicit emotion analysis via social networks behaviors",
+    "description": "With the rapid evolution of social networks, individuals increasingly rely on online platforms to express their opinions and emotions, rather than direct communication with others. By analyzing the comments, reviews, and other footage shared online, it is possible to gain insight into people's genuine implicit emotions. In this project, students are required to collect data from various social media platforms and utilizing transfer learning with pretrained models. By fine-tuning the model with the collected data, they aim to provide psychological estimations to individuals, offering valuable insights into their emotional well-being."
+  },
+  {
+    "file": "FYP Topics_Dr_Bingqing QU.docx",
+    "supervisor": "Bingqing Qu",
+    "title": "Fake news detection with transfer learning techniques",
+    "description": "This final year project aims to develop a system for detecting fake news using transfer learning techniques and natural language processing (NLP) methodologies. With the rise of misinformation and fake news in the digital age, the project seeks to leverage the power of transfer learning to create a robust and accurate model capable of identifying deceptive and misleading information. Students are proposed to firstly explore and select appropriate pre-trained models for transfer learning, such as BERT, GPT or others, considering their effectiveness in text classification tasks. And then fine-tune the selected pre-trained model on the collected dataset using transfer learning techniques.  At last, the model will be adapted to the task of fake news detection by adjusting the final layers or incorporating additional layers for classification purposes."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-MENG.docx",
+    "supervisor": "Dr. Tianhui Meng",
+    "title": "Embedded Intelligence: LLM-VLM-Powered Robot Control System",
+    "description": "This project aims to develop a lightweight Vision-Language-Action (VLA) control framework for a LeRobot-based small robotic arm by incorporating the subgoal reasoning idea inspired by dVLA. The system will use visual observations and natural language instructions (e.g., “pick up the red block and place it on the left,” “move the blue object into the box”) to guide robotic manipulation. A camera will capture the tabletop scene, enabling object recognition, task-stage prediction, and subgoal estimation to support robot actions in real time. By introducing intermediate subgoal representations between perception and control, the project seeks to improve task success, generalization, and interpretability in multi-step manipulation tasks. Expected Outcomes: • A functional lightweight VLA-based system that enables a small robotic arm to perform grasping and pick-and-place tasks from visual input and natural language instructions. • A subgoal-guided control framework that improves the robot’s ability to handle multi-step tasks and generalize to novel object positions and language commands. • Experimental validation showing that intermediate subgoal reasoning can improve task success rate, robustness, and interpretability compared with direct end-to-end behavior cloning."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-MENG.docx",
+    "supervisor": "Dr. Tianhui Meng",
+    "title": "Detecting and reducing linguistic bias in AI-generated content",
+    "description": "This project aims to develop an evaluation and mitigation framework for detecting and reducing linguistic bias in AI-generated content, by integrating Large Language Models (LLMs) with automated bias detection and prompt optimization techniques. The framework will systematically analyze how different prompting strategies, decoding parameters, and lightweight fine-tuning methods (e.g., LoRA) influence the presence of bias related to gender, ethnicity, and cultural representation in generated texts. A standardized dataset with counterfactual samples (e.g., attribute-swapped prompts) will be constructed to assess fairness, while both automated metrics (e.g., toxicity scores, embedding similarity, factual consistency) and human evaluations will be employed to ensure robust and reliable assessment. The system will also incorporate adversarial prompt testing to evaluate model robustness under challenging or misleading inputs.  Expected Outcomes: • A comprehensive framework for evaluating linguistic bias and fairness in AI-generated content across multiple dimensions. • A set of effective prompt engineering and model adaptation strategies that significantly reduce biased or harmful outputs. • A reproducible benchmark dataset and evaluation protocol for future research in AI fairness and responsible AI development. • Enhanced understanding of the relationship between model design, prompt structure, and ethical AI behavior."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-MENG.docx",
+    "supervisor": "Dr. Tianhui Meng",
+    "title": "Prompt Sensitivity in Code Generation LLMs",
+    "description": "This project aims to investigate prompt sensitivity in code generation LLMs, focusing on how small variations in natural language prompts—such as changes in specificity, wording, structure, or persona—affect the correctness, robustness, and consistency of generated code. The project will develop an evaluation framework that systematically perturbs prompts while keeping the programming task unchanged, then measures the resulting variation in code quality across multiple models and benchmarks. By combining function-level coding tasks with controlled prompt transformations, the study will identify which prompt features most strongly influence pass rates, error types, and output stability. The project will also explore mitigation strategies, including prompt normalization, structure-aware prompting templates, and self-refinement, to improve robustness and reduce sensitivity in practical coding workflows. Recent studies show that code LLMs can be highly sensitive to prompt variability, and that prompt specificity can materially affect pass@1 performance on code benchmarks.   Expected Outcomes: • A benchmark framework for measuring prompt sensitivity in code generation across different prompt perturbation types and programming tasks. • Quantitative evidence on how prompt wording, specificity, and formatting influence code correctness, stability, and error patterns. • A set of effective mitigation strategies, such as normalized prompt templates and robustness-oriented prompting methods, for improving code generation reliability. • Practical guidelines for students, developers, and researchers on writing more stable and effective prompts for programming tasks."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-MENG.docx",
+    "supervisor": "Dr. Tianhui Meng",
+    "title": "Edge–Cloud collaborative inference framework for VLA models",
+    "description": "Key Scientific Question: How to design a latency-aware, privacy-constrained, and semantically consistent model partitioning mechanism that enables distributed VLA reasoning across edge–cloud environments while preserving task performance and interpretability?  This project aims to develop a lightweight edge–cloud collaborative inference framework for Vision-Language-Action (VLA) models by incorporating dynamic model partitioning and subgoal-aware reasoning for resource-efficient robotic control. Inspired by recent advances in edge–cloud co-inference for large language models (LLMs) and the subgoal reasoning paradigm in dVLA, the system will dynamically distribute perception, reasoning, and action modules across edge devices and cloud servers. The framework will introduce a dynamic partitioning mechanism that adaptively decides: which model components (e.g., perception encoder, reasoning module, action decoder) run on the edge or in the cloud,  when to offload reasoning based on latency, bandwidth, and task complexity,  how to maintain intermediate subgoal representations across edge–cloud boundaries.  Expected Outcomes • A dynamic model partitioning strategy that adaptively distributes perception, reasoning, and control modules between edge and cloud to optimize latency, bandwidth usage, and computational efficiency. • Experimental validation demonstrating that edge–cloud co-inference with subgoal reasoning outperforms, in terms of task success rate, latency, robustness, and generalization."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-MENG.docx",
+    "supervisor": "Dr. Tianhui Meng",
+    "title": "AIGC: AI Generated Contents related projects",
+    "description": "Objective: This project aims to develop algorithms and systems that generates personalized content, such as text, images. You may extend the course project if you take “COMP4253 AI-Generated Content”.  Expected Outcomes: An improved model that can generate high-quality music or other contents. Improved coherence and relevance in AI-generated texts, images, and videos. Enhanced user engagement through interactive content adaptation."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-Wentao Fan.docx",
+    "supervisor": "Dr. Wentao Fan",
+    "title": "EEG Data Analysis Based on Spiking Neural Networks",
+    "description": "Electroencephalography (EEG) provides a non-invasive way to measure brain activity and has been widely used in brain-computer interface systems and cognitive state analysis. Common EEG tasks include motor imagery classification, emotion recognition, fatigue detection, and attention decoding. However, EEG signals are highly noisy, time-varying, and resource-sensitive in practical deployment. Conventional deep neural networks often achieve good performance, but they usually rely on dense computation and may not be well suited for low-power, low-latency, or edge-device scenarios.Spiking neural networks (SNNs), inspired by the event-driven and energy-efficient processing mechanism of the brain, provide a promising alternative for EEG modeling. Unlike conventional artificial neural networks, SNNs process information through sparse spike events and temporal membrane dynamics, making them naturally suitable for time-series neural signals. This project aims to guide students to investigate how SNN-based models can be transferred to new EEG tasks and further optimized for lightweight deployment. Students will study representative SNN-based EEG decoding methods and select one or more target tasks, such as motor imagery classification or emotion recognition. Based on existing SNN architectures, students will explore task transfer, lightweight model design, compression or quantization strategies, and low-latency system implementation. The project is expected to include not only model reproduction, but also transfer experiments, comparative evaluation, and, if possible, a simple real-time demonstration system. This project is suitable for students who are interested in pursuing future research in brain-inspired AI, EEG analysis, and efficient deep learning."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-Wentao Fan.docx",
+    "supervisor": "Dr. Wentao Fan",
+    "title": "Event-Based Optical Flow Estimation with Spiking Neural Networks",
+    "description": "This project studies optical flow estimation from Dynamic Vision Sensor (DVS) streams using spiking neural networks (SNNs). The student will reproduce a baseline such as Spike-FlowNet, then build a lightweight self-supervised pipeline to improve robustness under sparse events, noise, and fast motion. Public event-camera toolkits such as SpikeCV can be used for preprocessing and evaluation. The final work should compare flow accuracy, latency, and model efficiency, and discuss the suitability of SNN-based methods for time-critical vision tasks."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-Wentao Fan.docx",
+    "supervisor": "Dr. Wentao Fan",
+    "title": "Geometric world models",
+    "description": "In the pursuit of artificial general intelligence, World Models have long been regarded as one of the fundamental building blocks of future AI systems. Put simply, a world model equips AI with a form of “mental simulation,” enabling it to anticipate the consequences of different actions internally before actually taking them. However, existing predictive world models, such as Meta’s V-JEPA, despite their strong capabilities, still face two major challenges. First, they typically operate in a “flat” Euclidean space, which limits their ability to capture the complex hierarchical and geometric relationships among states in the real world. Second, as the number of simulated steps increases, their internal predictions tend to drift away from the true trajectory, leading to significant error accumulation over time. To address these limitations, students in this FYP project will explore how introducing non-Euclidean geometries—such as hyperbolic geometry and hyperspherical spaces—can endow AI’s representational space with a more natural sense of geometry, thereby enabling more accurate modeling of the hierarchical structures and latent relationships underlying complex tasks."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-Wentao Fan.docx",
+    "supervisor": "Dr. Wentao Fan",
+    "title": "Multimodal Data Clustering Based on Deep Generative Models",
+    "description": "Multimodal data, characterized by information coming from multiple sources or formats, presents a unique challenge for clustering algorithms due to its heterogeneous nature. This project explores the application of deep generative models (DGMs) to effectively cluster multimodal data. We propose a framework that utilizes Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Diffusion models to learn joint representations that capture the underlying correlations between different modalities. Our approach leverages these representations to perform clustering tasks, aiming to improve the coherence and separability of clusters compared to traditional methods. We evaluate our model on several datasets, including image-text and audio-visual, demonstrating its ability to achieve superior clustering performance and adaptability across diverse data types. This project not only enhances our understanding of deep learning in the context of multimodal data but also offers a scalable solution to real-world clustering problems."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Dr-Wentao Fan.docx",
+    "supervisor": "Dr. Wentao Fan",
+    "title": "Deep Learning for Multi-View News Stance Detection",
+    "description": "News stance detection aims to identify the attitude or position expressed in news content toward a specific topic, event, or entity. In the modern media landscape, news is often presented from multiple perspectives, sources, and formats, making stance detection a challenging task due to the diversity and complexity of viewpoints. This project will explore the application of deep learning techniques to effectively model and detect stances in multi-view news data.  This project not only deepens our understanding of deep learning in the context of opinion and stance analysis, but also provides a practical and scalable solution for analyzing media bias, public discourse, and information credibility."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Video Inference for Human Body Pose and Shape Estimation",
+    "description": "Human motion is fundamental to understanding behavior. Despite progress on single-image 3D pose and shape estimation, existing video-based state-of-the-art methods fail to produce accurate and natural motion sequences due to a lack of ground-truth 3D motion data for training. To address this problem, we are going to make use of an existing large-scale motion capture dataset (AMASS) together with unpaired, in-the-wild, 2D key point annotations. We are going to apply a temporal network architecture with a self-attention mechanism with adversarial training, make use of frame consistency at the sequence level to produces kinematically smooth motion sequences, to achieve the state-of-the-art performance."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Ultra High-fidelity Head Avatar via Dynamic Gaussians",
+    "description": "Creating high-fidelity 3D head avatars has always been a research hotspot, but there remains a great challenge under lightweight sparse view setups. In this paper, we propose Gaussian Head Avatar represented by controllable 3D Gaussians for high-fidelity head avatar modeling. We optimize the neutral 3D Gaussians and a fully learned MLP-based deformation field to capture complex expressions. The two parts benefit each other, thereby our method can model fine-grained dynamic details while ensuring expression accuracy. Furthermore, we devise a well-designed geometry-guided initialization strategy based on implicit SDF and Deep Marching Tetrahedra for the stability and convergence of the training procedure. Experiments show our approach outperforms other state-of-the-art sparse-view methods, achieving ultra high-fidelity rendering quality at 2K resolution even under exaggerated expressions."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Pore level face model reconstruction",
+    "description": "We investigate a technique for generating microstructural-level facial geometry by augmenting mesostructural-level facial scans with details synthesized from a set of representative skin patches scanned at higher resolution. Furthermore, we perform point-source reflectance measurements on skin patches to characterize the specular lobes at this smaller scale and analyze the variation in facial reflectance at the mesostructural and microstructural scales. We digitize representative patches using a polarization-based computational illumination technique that accounts for specular and single scattering. The recorded microstructural patches can be used to synthesize full-face microstructural details for the same or different subjects. This technique can lead to more realistic facial renderings, including more accurate reproduction of the specular effects of the skin."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Camera calibration and 3D reconstruction for lightstage",
+    "description": "The Light Stage systems efficiently capture how an actor's face appears when lit from every possible lighting direction. From this captured imagery, specialized algorithms create realistic virtual renditions of the actor in the illumination of any location or set, faithfully reproducing the color, texture, shine, shading, and translucency of the actor's skin. To achieve an excellent quality, we must first obtain high-precision camera parameters. Camera calibration technology is a key step to help the camera obtain internal and external parameters to reconstruct the three-dimensional space of the object. Therefore, this project will guide students to complete camera calibration and three-dimensional reconstruction based on multiple view capture systems such as a light stage. This project is also an internship project in cooperation with a local company."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Dynamic 3D vision reconstruction for wind turbine blade",
+    "description": "This is a project supported by National Science Foundation of China. This project proposes a dynamic 3D vision posture reconstruction for wind turbine blade (WTB) fault diagnosis, which combines different domain knowledge including machine vision reconstruction, posture analysis, finite element analysis, deep learning and so on. This project will focus on studying following key issues: address WTB posture estimation problem with marker-less images, which contains sub-pixel image segmentation, 3D posture reconstruction of wind turbine blade using silhouettes and posture estimation; develop the fault diagnosis system for wind turbine blade based on the reconstructed posture, which includes the study of the corresponding relationship between the deformation characteristics and fault types, the profile of first vibration mode and fault types, overall posture feature and blade fault types respectively. Thereby, a dynamic 3D vision posture reconstruction based wind turbine blade fault diagnosis system will be developed. An academic paper is expected be published for the designed method."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "An Interactive 3D Intelligent Campus/SLAM",
+    "description": "The technology of 3D reconstruction can help us to make a high-definition 3D map for campus, library, or any other spaces. Based on the 3D map, we can have very interesting interaction for tours or simulation. You can even reconstruct you and your friend’s 3D model and let your models interact in the virtual world. In this project, you are going to know how to make a high-definition 3D virtual world, by using drones and robot dogs."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "HOI: Embodied AI on Robot/Video generation",
+    "description": "This project addresses the problem of generating realistic 3D human object interactions (HOIs) driven by textual prompts. To this end, we take a modular design and decompose the complex task into simpler subtasks. We first develop a dual-branch diffusion model (DBDM) to generate both human and object motions conditioned on the input text, and encourage coherent motions by a cross-attention communication module between the human and object motion generation branches. We also develop an affordance prediction diffusion model (APDM) to predict the contacting area between the human and object during the interactions driven by the textual prompt. The APDM is independent of the results by the DBDM and thus can correct potential errors by the latter. Moreover, it stochastically generates the contacting points to diversify the generated motions. Finally, we incorporate the estimated contacting points into the classifier-guidance to achieve accurate and close contact between humans and objects."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Animated face robot",
+    "description": "A modern, high-performance, and board-agnostic animated face system for ESP32, Arduino, and other microcontrollers. This project features organic eye movements and synchronized mouth expressions using linear interpolation (Lerp) for ultra-smooth transitions, bringing a touch of personality to any robot."
+  },
+  {
+    "file": "FYP-1_Topic_2026_Prof. Amy Zhang.docx",
+    "supervisor": "Amy Zhang",
+    "title": "Student proposed topics",
+    "description": "Any computer vision related topic is welcomed to be proposed by students. As the supervisor, I will be responsible to help the students to implement your own idea."
+  },
+  {
+    "file": "FYP-1_Topic_Dr Jianxiong Guo.docx",
+    "supervisor": "Dr. Jianxiong Guo",
+    "title": "AIGC Inference task scheduling by using diffusion-based Reinforcement Learning",
+    "description": "With the rapid development of AIGC technologies such as large language models and image generation models, the scale of inference tasks continues to grow. How to achieve efficient and intelligent task scheduling under limited computing resources has become a key problem in modern AI systems. This research focuses on AIGC inference scenarios and explores the integration of Diffusion Models and Reinforcement Learning for dynamic scheduling and resource allocation of complex inference tasks. Our goal is to develop an intelligent scheduling method that can make decisions in environments with multiple tasks, multiple resources, and dynamic workloads. The system is expected to maintain generation quality while further reducing latency, improving throughput, and increasing resource utilization. This topic combines machine learning, systems optimization, and AIGC applications, offering both theoretical significance and strong practical value. This project is especially suitable for undergraduate students interested in the following areas: Machine Learning / Reinforcement Learning / Generative Models Cloud Computing and Resource Scheduling Large Model Inference Optimization and AIGC Systems Students joining this project will have the opportunity to work on cutting-edge research problems, learn research methodologies, and participate in algorithm design, experimental implementation, and paper writing. We welcome undergraduate students who have basic Python programming skills, a strong interest in AI research, and a willingness to explore actively."
+  },
+  {
+    "file": "FYP-1_Topic_Dr Jianxiong Guo.docx",
+    "supervisor": "Dr. Jianxiong Guo",
+    "title": "Model caching and inference offloading for edge LLMs by using Reinforcement learning",
+    "description": "With the rapid development of large language models (LLMs), how to efficiently deploy and run them on edge devices has become an important research problem in modern AI systems. Due to the limited computing power, storage capacity, and energy budget of edge devices, LLM inference often faces challenges such as high latency, insufficient resources, and unstable service quality. This project focuses on optimizing LLM inference in edge environments and explores the use of Reinforcement Learning to intelligently manage model caching and inference offloading decisions. Specifically, we aim to design an adaptive method that can determine which models should be cached and which inference tasks should be offloaded according to network conditions, device workload, task requirements, and cache status. The goal is to reduce latency and energy consumption while maintaining service quality and improving overall resource utilization. This research topic combines machine learning, edge computing, and systems optimization, and has both strong academic value and practical significance. This project is suitable for undergraduate students who are interested in the following areas: Reinforcement Learning / Machine Learning / Large Language Models Edge Computing and Distributed Systems Model Deployment Optimization and Intelligent Resource Scheduling Students joining this project will have the opportunity to work on cutting-edge research problems, learn research methodologies, and participate in algorithm design, experimental implementation, and paper writing. We welcome undergraduate students who have basic programming skills (such as Python), a strong interest in AI and systems research, and a willingness to explore actively. References: Xu M, Niyato D, Brinton C G. Serving long-context LLMs at the mobile edge: Test-time reinforcement learning-based model caching and inference offloading[J]. IEEE Transactions on Networking, 2026. Zhu B, Chen Z, Zhao L, et al. Joint Caching and Inference for Large Language Models in Wireless Networks[C]//ICC 2025-IEEE International Conference on Communications. IEEE, 2025: 6285-6290."
+  },
+  {
+    "file": "FYP-1_Topic_Dr Jianxiong Guo.docx",
+    "supervisor": "Dr. Jianxiong Guo",
+    "title": "Adaptive Parameter-Efficient Fine-Tuning for Federated Large Models",
+    "description": "With the rapid development of large models, how to achieve efficient collaborative training while preserving data privacy has become an important problem in artificial intelligence research. Federated Learning provides a practical solution for scenarios where data cannot be shared across multiple parties. However, when combined with large models, it often faces challenges such as high communication overhead, expensive training costs, and strong device heterogeneity. This project focuses on the setting of Federated Large Models and explores Adaptive Parameter-Efficient Fine-Tuning methods to improve the training efficiency and adaptability of large models in distributed environments. Specifically, we aim to design methods that can adaptively select or adjust fine-tuning strategies according to the resource conditions, data distributions, and task requirements of different clients. For example, we will study how to optimize parameter-efficient fine-tuning techniques such as LoRA, Adapters, and Prompt Tuning, so that the model can maintain strong performance and generalization ability while reducing communication and computational costs. This research direction combines large models, federated learning, and efficient training methods, offering both cutting-edge academic value and strong practical significance. This project is suitable for undergraduate students who are interested in the following areas: Machine Learning / Deep Learning / Large Language Models Federated Learning and Privacy-Preserving Computing Model Fine-Tuning Optimization and Distributed Training Systems Students joining this project will have the opportunity to work on cutting-edge research problems, learn research methodologies, and participate in algorithm design, experimental implementation, and paper writing. We welcome undergraduate students who have basic programming skills (such as Python), a strong interest in AI research, and a willingness to explore actively. Liu J, Liao Y, Xu H, et al. Adaptive parameter-efficient federated fine-tuning on heterogeneous devices[J]. IEEE Transactions on Mobile Computing, 2025. Bian J, Peng Y, Wang L, et al. A survey on parameter-efficient fine-tuning for foundation models in federated learning[J]. arXiv preprint arXiv:2504.21099, 2025."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Math Question Generation",
+    "description": "This project intends to design and implement a generator which takes students’ ID as input and randomly generate questions in some specific domain of mathematics. The generator is expected to be applicable in real assignments or quizzes for all common undergraduate math courses. Thus, the generator regards math as a language. Each generated question is a string in the language. And those strings will pass lexical analysis, syntax analysis, and semantic analysis."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Code Check",
+    "description": "This project intends to design a code check to detect plagiarism in programming assignments. And the design is expected to be implemented as a component within AutoLab."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Program Verification",
+    "description": "Formally prove the correctness of programs using proof assistants."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Automated Proof Assistant in Graph Theory",
+    "description": "In graph theory, many conjectures are hard to be prove because they have many cases (more than 100 for example). Even such a theorem is claimed to be proven already, the verification of the proof is infeasible to human. Thus, computer systems, like Coq, are invented to check these proofs. The famous Four-Color Theorem is a perfect example. This project intends to learn programming in Coq and try to verify some difficult proofs in graph theory."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "The Polynomial Hierarchy of Graph Problems",
+    "description": "In COMP3023 and COMP4003, we briefly introduce the computational complexity classes P, NP, and NP-complete. However, there are many problems harder than NP but easier than PSPACE(the problems can be solved using polynomial memory space). To fill this gap, people define the polynomial hierarchy, which roots on NP as the ground level, and grows infinite levels to PSPACE as a fix-point. This project will study the complexity of some open problems and locate their levels in the polynomial hierarchy."
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Game Design",
+    "description": "For fun"
+  },
+  {
+    "file": "FYP-1_Topic_Dr. Goliath Li.docx",
+    "supervisor": "Goliath Li",
+    "title": "Bring Your Own Idea",
+    "description": "Any interesting idea is welcome."
+  },
+  {
+    "file": "FYP-1_Topics_2026_Dr_Xiao DONG.pdf",
+    "supervisor": "Dr. Xiao DONG",
+    "title": "High -Dimensional Gaussian Splatting for High -Fidelity Animatable Avatars",
+    "description": "We study the high -dimensional Gaussian Splatting, which is a novel  extension of 3D Gaussian Splatting for high -quality animatable avatars. 3D  Gaussian Splatting represents a face through a collection of 3D Gaussian  primitives. 3DGS excels at rendering stat ic faces, but the state -of-the-art still  struggles with nonlinear deformations, complex lighting effects, and fine  details. We study how to extend higher dimensionality to increase  expressivity through conditioning on a learnable local embedding."
+  },
+  {
+    "file": "FYP-1_Topics_2026_Dr_Xiao DONG.pdf",
+    "supervisor": "Dr. Xiao DONG",
+    "title": "Whole -Body 3D Avatar with Pose -Driven Deformations from a Single Image",
+    "description": "We study a reconstruction method that combines the strengths of 3D  Gaussian Splatting rendering and diffusion -based human animation method  to obtain a personalized 3D human avatar with pose -driven deformations  from a single image."
+  },
+  {
+    "file": "FYP-1_Topics_2026_Dr_Xiao DONG.pdf",
+    "supervisor": "Dr. Xiao DONG",
+    "title": "High -Fidelity Deblurring via 3D Gaussian Splatting",
+    "description": "We study a reconstruction method that combines 3D Gaussian Splatting with  camera aperture modeling to obtain sharp 3D scenes from blurry multi -view  images."
+  },
+  {
+    "file": "FYP-1_Topics_2026_Dr_Xiao DONG.pdf",
+    "supervisor": "Dr. Xiao DONG",
+    "title": "High -Resolution Image Generation with Diffusion Models",
+    "description": "We study a super -resolution method that combines latent -space alignment  and localized detail enhancement to obtain high -fidelity 1K+ images with  sharp textures from low -resolution inputs."
+  },
+  {
+    "file": "FYP-1_Topics_2026_Dr_Xiao DONG.pdf",
+    "supervisor": "Dr. Xiao DONG",
+    "title": "Learning to Prompt for Biomedical Vision -Language Models",
+    "description": "Effectively adapting vision -language models (VLMs) to downstream  applications remains challenging, as their accuracy often depends on time - intensive and expertise -demanding prompt engineering, while full model  fine-tuning is costly. Explorations in prompt learning for biomedical image   analysis are still highly limited. In this work, we study a prompt learning  framework that enables efficient adaptation of BiomedCLIP for accurate and  highly generalizable few -shot biomedical image classification."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Monica Wen CHEN.docx",
+    "supervisor": "Dr. Monica Wen CHEN",
+    "title": "Synthetic financial time series data generation",
+    "description": "Synthetic data has high value in a variety of fields including finance, because it can provide a large amount a data with low cost. In finance, it can be used as an alternative simulation model when the historical data is scarce.   In this project, you are expected to conduct a comprehensive literature review on the current methods of synthetic financial time series data generation, and develop or/and implement data generation method such as GANs, transformer; and evaluate your generating outcome."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Monica Wen CHEN.docx",
+    "supervisor": "Dr. Monica Wen CHEN",
+    "title": "Optimal investment, consumption problem in retirement management",
+    "description": "In this project, it is expected to build a DNN-based decision support tools for individuals to optimize their spending and investment for better retirement life."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Monica Wen CHEN.docx",
+    "supervisor": "Dr. Monica Wen CHEN",
+    "title": "Kolmogorov–Arnold Networks (KANs) and its applications",
+    "description": "In this project, you are expected to conduct a comprehensive study of the KANs models, investigate the architecture and evaluate their performance"
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Monica Wen CHEN.docx",
+    "supervisor": "Dr. Monica Wen CHEN",
+    "title": "Dynamic Integrated Climate-Economy (DICE) model and optimal climate policies",
+    "description": "In this project, you are expected to build the DICE model incorporating climate and economic uncertainties, and optimize mitigation strategies under uncertainties, such as carbon prices and technology advancements. You will use Monte Carlo simulation for the random variables and DNN based regression method to solve"
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Monica Wen CHEN.docx",
+    "supervisor": "Dr. Monica Wen CHEN",
+    "title": "Dynamic Bayesian networks (DBN) applications: Dynamic Integrated Climate-Economy (DICE) model and optimal climate policies",
+    "description": "A DBN naturally models a discrete-time, stochastic dice-rolling process with hidden state (which die is used) and observable outcomes (roll results). In this project, you are expected to represent DICE model as a Dynamics Bayesian networks, learn the parameters from data and conduct probabilistic inference, and use the posterior from inference to compute optimal climate polices. Dynamic Bayesian Networks provide a unified probabilistic framework to represent the DICE model’s dynamic climate-economy structure, perform state filtering and parameter learning, quantify deep uncertainty, and compute adaptive optimal climate policies that update as new climate and economic observations become available."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "Human Activity Recognition with Large Language Models",
+    "description": "In smart city applications, we have leveraged large language models (LLMs) to process radio frequency (RF) data efficiently. We expect LLMs can be extended to analyze data collected from other sensors (together with RF signals) in IoT devices to enable different applications. For instance, there are large amounts of data collected from inertial measurement units (IMUs) embedded in IoT devices, which include an accelerometer and a gyroscope. These data are crucial in many applications, such as human activity recognition (HAR). We can tokenize and structure the sequential sensor data so that LLM techniques can be successively applied.  The project team will study state-of-the-art works on HAR, re-implement corresponding schemes, and design an HAR algorithm based on insight observations."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "Human Activity Recognition on Edge Devices",
+    "description": "Human Activity Recognition (HAR) on edge devices is a key research direction in wearable computing and IoT, enabling real-time, privacy-preserving activity monitoring without cloud reliance. Unlike cloud-centric systems, prone to data leakage and high latency, edge-based HAR deploys lightweight models on resource-constrained devices, which collect wireless, accelerometer, or gyroscope data to classify activities like walking, running, and sitting. A core challenge is balancing model performance and efficiency: deep learning models must be compressed to fit edge devices’ limited memory and power, while maintaining accuracy. Despite this, edge-based HAR offers advantages including reduced bandwidth, enhanced privacy, and real-world applicability (e.g., elderly care, fitness tracking).   The project team will study state-of-the-art works on HAR, re-implement corresponding schemes, and design an HAR algorithm based on insight observations."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "Negative Sampling in Graph Neural Networks",
+    "description": "Negative sampling is a widely used and effective strategy in graph neural networks (GNNs) for alleviating the computational burden of full-graph training and improving discriminative representation learning. Instead of using all non-connected node pairs as negative examples, which is computationally prohibitive on large-scale graphs, negative sampling constructs a manageable set of false pairs by randomly selecting non-adjacent nodes. This strategy not only reduces the complexity of contrastive learning and link prediction objectives but also helps the model distinguish between real structural dependencies and spurious correlations. By incorporating carefully sampled negative instances during training, GNNs can learn more robust and generalizable node embeddings, thereby enhancing performance on downstream tasks such as node classification, link prediction, and graph recommendation.  The project team will study state-of-the-art works on negative sampling, re-implement corresponding schemes, and design an algorithm based on insight observations."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "Graph Condensation",
+    "description": "Graph condensation aims to synthesize a small, highly informative synthetic graph from a large-scale original graph, such that a graph neural network trained on the condensed graph can achieve performance close to that obtained by training on the full real graph. By reducing the number of nodes and edges while preserving critical structural and attribute information, graph condensation effectively alleviates the computational and memory challenges of training GNNs on massive real-world graphs. Existing methods typically optimize the node features and topology of the synthetic graph through bilevel optimization, knowledge distillation, or contrastive matching, capturing the essential distribution and relational patterns that dominate downstream tasks such as node classification and link prediction. This paradigm enables efficient model training, fast prototyping, and scalable deployment of GNNs in resource-constrained environments, making it particularly valuable for large-scale graph learning systems.  The project team will study state-of-the-art works on graph condensation, re-implement corresponding schemes, and design an algorithm based on insight observations."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "3D Reconstruction with Wireless Signals",
+    "description": "3D reconstruction with wireless signals (e.g., RF signals, Wi-Fi, or millimeter-wave) has emerged as an innovative and contact-free approach for reconstructing physical environments and objects, overcoming the limitations of traditional vision-based methods in low-light, occluded, or visually degraded scenarios. By leveraging the propagation characteristics of wireless signals—such as reflection, diffraction, and time-of-flight—this technique extracts spatial information from signal measurements (e.g., received signal strength, phase, or channel state information) to reconstruct 3D structures. A core advantage is its ability to penetrate non-metallic obstacles, enabling reconstruction in environments where optical sensors fail. Key challenges include mitigating signal noise, handling multipath effects, and converting noisy signal data into accurate 3D coordinates. Recent advances in signal processing, machine learning (e.g., cGANs, deep feature extraction), and wireless hardware have enhanced the precision and efficiency of this approach, expanding its applications in smart homes, autonomous navigation, security monitoring, and remote sensing.  The project team will study state-of-the-art works on wireless 3D reconstruction, re-implement corresponding schemes, and do the analysis based on insight observations."
+  },
+  {
+    "file": "FYP-1_Topics_Dr_Weipeng_zhuo.docx",
+    "supervisor": "Dr. Weipeng Zhuo",
+    "title": "Improving Inference Efficiency of Reasoning-Capable LLMs",
+    "description": "Reasoning-capable large language models (LLMs) are increasingly integrated into mainstream AI services, such as ChatGPT, DeepSeek, and Qwen, due to their strong ability to handle complex tasks requiring multi-step reasoning. We provide several representative use cases below. When interacting with systems like ChatGPT, users often pose queries that require step-by-step logical reasoning to produce a final answer, such as solving mathematical problems, generating code, or organizing structured plans. To address such queries, reasoning LLMs generate intermediate thinking steps (i.e., reasoning tokens) before arriving at the final answer, which typically leads to superior performance compared to non-reasoning LLMs. However, this process substantially increases the number of generated tokens, resulting in higher computational overhead and latency. Compared to standard LLMs, reasoning LLMs are therefore more expensive to run, less scalable, and more difficult to deploy in real-time or resource-constrained environments. As a result, improving the inference efficiency of reasoning-capable LLMs is of critical importance.  The project team will study state-of-the-art works on reasoning models, re-implement corresponding schemes, and do the analysis based on insight observations."
+  },
+  {
+    "file": "FYP1TopicsDr_Dyce_Zhao2026.pdf",
+    "supervisor": "Dyce Jing ZHAO",
+    "title": "Geolocation -based game",
+    "description": "People love games but it will be physically unhealthy if they keep you indoor and  stationary, so, let’s get moving with geolocation -based games!     Geolocation -based mobile game  is a type of mobile game where the gameplay  evolves and progresses v ia a player's location in the real world, often attained using  GPS. Most location -based games are mobile games that make use of the mobile  phone’s built in GPS capability, and often have real -world map integration.     In this project, you will implement a ge olocation -based game of your own design. The  game runs on mobile devices and can be single or multiple player, with or without  augmented reality.     Below is a list of notable examples:   • Pokémon Go   • Harry Potter: Wizards Unite  (discontinued)   • Ingress   • Geocaching   • BotFighters[18]  • Dragon Quest Walk   • Shadow Cities  (discontinued)   • Maguss  (discontinued)   • Minecraft Earth  (discontinued)   • Cluetivity"
+  },
+  {
+    "file": "FYP1TopicsDr_Dyce_Zhao2026.pdf",
+    "supervisor": "Dyce Jing ZHAO",
+    "title": "Application Based on Game Engines",
+    "description": "A game engine is a software framework primarily designed for the development of  video games and generally includes relevant libraries and support programs. In many  cases, game engines provide a suite of visual development tools in addition to  reusable soft ware components. These tools are generally provided in an integrated  development environment to enable simplified, rapid development of applications in  a data -driven manner.     Unity and the Unreal Engine are currently the two most popular choices for  devel opers. A lot of games are built on top of these two, including Pokémon Go,  Monument Valley, Call of Duty: Mobile, Hogwarts Legacy, and PUBG: Battlegrounds.     In this project, you will study a game engine and build a 2D/3D application with a topic  of your ow n choice. This project may require 3D modeling and 3D animation  technology, too."
+  },
+  {
+    "file": "FYP1TopicsDr_Dyce_Zhao2026.pdf",
+    "supervisor": "Dyce Jing ZHAO",
+    "title": "Academic Collaboration Networks  on DBLP",
+    "description": "DBLP (Digital Bibliography & Library Project) is a comprehensive database of  computer science publications, providing metadata such as authors, titles, journals,  and citation relationships. Data analysis based on DBLP involves extracting insigh ts  from this rich dataset to understand academic trends, collaboration patterns, and  research impact.   One possible direction in this domain  is Academic Collaboration Networks  (ACNs) .  CAN s are structured systems that map and analyze interactions among resea rchers,  institutions, or disciplines through shared publications, co -authorships, and joint  projects. These networks leverage network science and bibliometric analysis to  uncover patterns in scientific productivity, knowledge dissemination, and  interdiscip linary innovation"
+  },
+  {
+    "file": "FYP1TopicsDr_Dyce_Zhao2026.pdf",
+    "supervisor": "Dyce Jing ZHAO",
+    "title": "Detecting AI -Generated Text Using Machine Learning",
+    "description": "With the rapid development of large language models, distinguishing between  human -written and AI -generated text has become increasingly important. This  project aims to develop a machine learning system that can classify whether a piece  of text is written by a human or generated by an AI model. The student will collect  or construct datasets containing both types of text, extract linguistic or statistical  features, and train classification models such as logistic regression, random forests,  or tra nsformer -based classifiers. The project will evaluate the effectiveness of  different features and models and discuss the challenges of detection as AI - generated text becomes more sophisticated."
+  },
+  {
+    "file": "FYP1TopicsDr_Dyce_Zhao2026.pdf",
+    "supervisor": "Dyce Jing ZHAO",
+    "title": "Tabletop RPG Scenario Generator Using DeepSeek",
+    "description": "DeepSeek is a cutting -edge AI platform specializing in natural language processing  (NLP), capable of generating  human -like text, understanding context, and adapting  to specific domains. Its advanced language models excel in tasks like dialogue  generation, summarization, and creative writing, making it ideal for applications  requiring dynamic and context -aware outpu ts.    This project uses DeepSeek to create a dynamic scenario generator for tabletop role - playing games (RPGs) like Dungeons & Dragons. The system will produce immersive,  customizable storylines, character dialogues, and plot twists based on player choices.   For example, if players decide to negotiate with a dragon instead of fighting,  DeepSeek generates branching narratives, unique NPC interactions, and  consequences in real time.     Follows are the possible components:   ⚫ Scenario Generation: Fine -tune DeepSeek on RPG rulebooks and existing  campaigns to ensure lore consistency.   ⚫ Dialogue Customization: Allow Game Masters (GMs) to input constraints (e.g.,  “medieval fantasy” or “cyberpunk noir”) for tailored storytelling.   ⚫ Visu alization Tools: Integrate simple APIs (e.g., DALL -E) to generate scene  illustrations alongside text."
+  },
+  {
+    "file": "FYP_Topic_2026-Dr_Simon_Luo.docx",
+    "supervisor": "Unknown",
+    "title": "AI Ethics Analysis and Evaluation",
+    "description": "Fast development of AI, like ChatGPPT, GPT-4, has put AI ethics at a level with impact to span from traditional NPOs to overall businesses.  In this project, you are expected to conduct domain relevant (including information cocoon, AI intimacy) analysis of AI Ethics Analysis and Evaluation."
+  },
+  {
+    "file": "FYP_Topic_2026-Dr_Simon_Luo.docx",
+    "supervisor": "Unknown",
+    "title": "Sustainable LLMs Development Analysis",
+    "description": "China has been one of the major players in LLMs. However this status quo is threaten by the de-linking and other disruptions. In this context, to sustain China’s LLMs further development capacity, in this project, you are expected to conduct China’s LLMs Development Analysis to identify a sustainable path."
+  },
+  {
+    "file": "FYP_Topic_2026-Dr_Simon_Luo.docx",
+    "supervisor": "Dr. Simon LUO",
+    "title": "AlphaFold3: Predicting Pharmaceuticals Potential via Protein Interaction Analysis",
+    "description": "AlphaFold 3.0 provides open source code to predict the 3-D structure of arbitrary proteins with unprecedented accuracy.  AlphaFold v2.0 is a completely new model that was entered in the CASP14 assessment and published in Nature (Jumper et al. 2021). The package contains source code, trained weights, and an inference script. In this project, you are expected to leverage the capacity of AlphaFold 3.0 to predict Protein structures and interactions with intention of Pharmaceuticals potentials."
+  },
+  {
+    "file": "FYP_Topic_2026-Dr_Simon_Luo.docx",
+    "supervisor": "Dr. Simon LUO",
+    "title": "AI and Security Automation for Red, Blue, and Purple Teams",
+    "description": "Availability of AI systems like ChatGPPT, GPT-4 is leading to a revolutionary era for AI to yield unforeseen impact to the world. In this project, you are expect to leverage LLMs in the context of AI and Security Automation for Red, Blue, and Purple Teams."
+  },
+  {
+    "file": "FYP_Topic_2026-Dr_Simon_Luo.docx",
+    "supervisor": "Dr. Simon LUO",
+    "title": "Software Engineering for Agentic AI",
+    "description": "Availability of AI systems like ChatGPPT, GPT-4 is leading to a revolutionary era for AI to yield unforeseen impact to the world. Future impact of AI heavily rests upon AI Engineering, an emergent discipline focused on developing tools, systems, and processes to enable the application of artificial intelligence in real-world contexts. In this project, you are expect to study software engineering for Agentic AI with a specific industry application."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Lee-Oscillator-Enhanced Quantum Price Level (QPL) Model for Chaotic Forex Trading",
+    "description": "Forex markets exhibit extreme volatility and chaotic behavior driven by macroeconomic news, interest rate differentials, geopolitical events, and herd trading effects. This project integrates Lee-oscillators’ transient chaotic dynamics into the Quantum Price Level (QPL) framework to model nonlinear exchange rate thresholds and risk boundaries more realistically. Students will design a chaotic neural network that processes high-frequency tick or daily data for major currency pairs (e.g., EUR/USD, USD/JPY, GBP/USD), fusing QPL-derived quantum signals with oscillator-based retrograde feedback to forecast Value-at-Risk (VaR) or expected shortfall. The system aims to reduce prediction errors (MAE/RMSE) compared to traditional LSTM/GRU models, offering more robust trading signals in highly uncertain forex environments. Evaluation will use real-world datasets (e.g., from 2015–2025) with backtesting under realistic spreads and slippage."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Chaotic Neural Oscillatory Deep Reinforcement Learning for Quantum Finance-Inspired Portfolio Optimization",
+    "description": "Traditional portfolio optimization struggles with non-stationary market regimes and abrupt regime shifts. Building upon LORSTransformerDRL concepts, this project develops an end-to-end deep reinforcement learning agent that replaces standard neurons with Lee-oscillator units to capture transient chaos in asset returns. The agent directly learns optimal buy/hold/sell policies by incorporating quantum finance signals (QPL thresholds) as part of the state representation. Students will implement the model, train it on multi-asset time-series (indices, forex, commodities), and evaluate risk-adjusted performance (Sharpe ratio, maximum drawdown, cumulative return) under realistic transaction costs and slippage. The goal is to achieve superior out-of-sample generalization in volatile global markets."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Transient-Chaotic Type-2 Fuzzy Neural Networks with Lee-Oscillators for Worldwide Commodity Price Forecasting",
+    "description": "Commodity prices are influenced by geopolitical events, supply shocks, and nonlinear feedback loops, making accurate long-term forecasting difficult. Extending the CT2TFDNN architecture, this project embeds Lee-oscillators into a type-2 fuzzy deep neuro-oscillatory network to handle uncertainty via chaotic transient-fuzzy membership functions and retrograde signaling. Students will fuse top financial signals (technical indicators + quantum-derived features) and train the model on historical data of major commodities (oil, gold, metals, agriculture). The system targets reduced forecasting errors (RMSE, MAPE) and better handling of abrupt price jumps compared to classical recurrent networks. Real-world backtesting and ablation studies will validate chaotic components’ contribution to robustness."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Quantum Finance Sentiment Analysis Using Chaotic Dual-Feature Neural Oscillators for Stock Volatility Prediction",
+    "description": "Investor sentiment from social media and news significantly drives short-term stock volatility, yet most models fail to capture bidirectional chaotic dependencies. This project combines Lee-oscillators with a dual-feature chaotic neural architecture (inspired by CDF-GCN principles) to jointly process textual sentiment embeddings and quantum price level thresholds. Students will build an end-to-end system that predicts intraday/next-day volatility for selected stocks, using chaotic weight oscillation to model nonlinear sentiment-market interactions. Performance will be benchmarked against standard GARCH, LSTM, and transformer baselines using metrics such as directional accuracy, MAE, and calibration scores. The work aims to demonstrate improved early warning of volatility spikes in sentiment-driven regimes."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "CNO-Former Extension: Chaotic Neural Oscillatory Transformers for Advanced Social Media Dialogue Generation",
+    "description": "Social media conversations are highly dynamic, context-dependent, and often exhibit abrupt topic shifts. This project extends the CNO-former by further refining chaotic dot-product attention with Lee-oscillator retrograde signaling to better preserve long-range dependencies while reducing quadratic complexity. Students will fine-tune the model on large-scale dialogue datasets (e.g., Reddit, Twitter threads) for open-domain response generation. The chaotic mechanism aims to improve coherence, diversity, and emotional expressiveness, evaluated via BLEU, ROUGE, Dist-n, PPL, and human preference scores. Comparisons against vanilla transformers, Performer, and Reformer will highlight gains in information retention and convergence speed for real-time chat applications."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Chaotic Lee-Oscillator Transformers for Multilingual Text Summarization with Nonlinear Sentiment Handling",
+    "description": "Multilingual news and reviews contain sentiment fluctuations and cultural nuances that standard transformers struggle to model effectively. This project infuses Lee-oscillators into the transformer encoder-decoder to introduce transient chaotic dynamics in self-attention layers, enabling better capture of nonlinear sentiment transitions across languages. Students will train and evaluate abstractive summarization models on multilingual datasets (e.g., MLSum, XL-Sum). The chaotic component targets higher ROUGE-L and BERTScore while reducing exposure bias and repetition. Ablation experiments will quantify the contribution of oscillatory behavior to handling low-resource languages and emotionally charged content."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Transient-Chaotic Neural Networks with Lee-Oscillators for Machine Translation in Noisy NLP Environments",
+    "description": "User-generated content (social media, forums) is noisy, containing slang, typos, emojis, and code-switching, challenging conventional seq2seq models. Drawing inspiration from TCAN’s progressive memory recalling, this project replaces standard activation functions in transformer translation layers with Lee-oscillator chaotic units to simulate dynamic, adaptive memory association under noise. Students will build and fine-tune models for noisy→clean translation pairs in high-resource and low-resource language pairs. Evaluation focuses on BLEU, chrF, COMET, and robustness metrics. The chaotic approach is expected to yield more fluent and contextually accurate translations in real-world noisy settings."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Lee-Oscillator-Infused Chaotic Transformers for NLP-Based Fake News Detection and Progressive Fact-Checking",
+    "description": "Fake news spreads rapidly via progressive narrative escalation and subtle linguistic manipulation. This project integrates Lee-oscillators into transformer architectures to enable chaotic progressive pattern association for detecting evolving misinformation. Students will design a model that processes claim + evidence pairs or threaded social media posts, using oscillatory dynamics to model uncertainty propagation over time. Training uses datasets like FakeNewsNet, LIAR, or FEVER; evaluation includes F1, AUC, explainability via attention visualization, and progressive accuracy improvement. The chaotic mechanism aims to outperform static BERT/RoBERTa baselines, especially on emerging or evolving false narratives."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Multi-Agent Chaotic Neural Collaboration System with Lee-Oscillators for Dynamic Office Resource Allocation",
+    "description": "Hybrid offices suffer from meeting room overuse/underuse, booking conflicts, and last-minute changes. Extending OfficeMind, this project equips autonomous agents (representing users/resources) with Lee-oscillator chaotic units to perform nonlinear priority negotiation and conflict resolution. Chaotic dynamics enable agents to escape local optima during real-time bidding and adapt to sudden demand surges. Students will implement a decentralized MAS with master-slave coordination, integrate with calendar APIs (Outlook/Slack), and simulate/evaluate in 10–50 room scenarios. Targets include ≥25% utilization increase, ≥30% conflict reduction, and faster convergence (<3s) compared to rule-based or conventional RL agents."
+  },
+  {
+    "file": "FYP_Topic_Dr Raymond LEE.docx",
+    "supervisor": "Dr. Raymond LEE",
+    "title": "Lee-Oscillator-Infused Chaotic Transformers for Narrative Consistency Analysis in Criminal Testimony",
+    "description": "Criminal testimony is characterized by inherent non-linear dynamics—such as cognitive hesitation, memory reconstruction, and temporal inconsistencies—which conventional static NLP architectures (e.g., BERT, RoBERTa) fail to model effectively. This project proposes an innovative integration of Lee-oscillators into Transformer-based frameworks to simulate the chaotic evolution of narrative structures in legal statements. By leveraging the chaotic bifurcation and strange attractor properties of Lee-oscillators, the model aims to capture the underlying cognitive fluctuations during testimony. Students will develop a system capable of processing sequential transcripts for high-stakes tasks, including reliability quantification, latent contradiction detection, and multi-turn consistency analysis. Benchmarked against state-of-the-art baselines, this chaotic mechanism seeks to achieve superior performance in identifying the complex, dynamic patterns of human memory and deception."
+  },
+  {
+    "file": "Ms_Yanyan Ji_FYP-Topics.docx",
+    "supervisor": "Yanyan Ji",
+    "title": "Underwater Robot with Buoy Relay System",
+    "description": "This project aims to design and implement a buoy-based relay communication system for underwater robots. Underwater robots face challenges in real-time data transmission due to the limitations of acoustic communication. By utilizing surface buoys as relay stations, we can establish a hybrid communication link (acoustic from robot to buoy, and radio from buoy to shore) to improve bandwidth and reliability. The student will develop a communication protocol, simulate the system, and possibly implement a prototype using low-cost hardware (e.g., Arduino, Raspberry Pi) to demonstrate data relay and robot control. Machine learning techniques may be explored to predict channel conditions and optimize transmission. The project will evaluate performance metrics such as latency, packet loss, and energy efficiency."
+  },
+  {
+    "file": "Ms_Yanyan Ji_FYP-Topics.docx",
+    "supervisor": "Yanyan Ji",
+    "title": "Desktop Robot Based on Large Language Models",
+    "description": "This project focuses on developing an interactive desktop robot powered by large language models (LLMs). The robot will be capable of understanding and generating natural language, enabling seamless human-robot interaction. The student will integrate an LLM (such as GPT) with a robotic platform (e.g., a simple robotic arm or mobile base) to perform tasks based on user commands. Key components include speech recognition, intent detection, dialogue management, and low-level robot control. The project will explore prompt engineering, fine-tuning of LLMs for robotics, and real-time response optimization. Evaluation will be based on task completion accuracy, user satisfaction, and response latency."
+  },
+  {
+    "file": "Ms_Yanyan Ji_FYP-Topics.docx",
+    "supervisor": "Yanyan Ji",
+    "title": "Automatic Cleaning Device for Underwater Cameras",
+    "description": "Underwater cameras are prone to biofouling and debris accumulation, degrading image quality. This project aims to develop an automatic cleaning system for underwater camera lenses. The system will use computer vision techniques to detect dirt or blurriness in the captured images, triggering a mechanical cleaning mechanism (e.g., wiper, water jet, or ultrasonic cleaner). The student will design and implement an image quality assessment algorithm, integrate it with a microcontroller (e.g., Arduino, Raspberry Pi), and test the prototype in a controlled water environment. The project may also explore machine learning for fouling prediction and adaptive cleaning schedules. Performance will be evaluated based on image clarity restoration and system reliability."
+  },
+  {
+    "file": "Ms_Yanyan Ji_FYP-Topics.docx",
+    "supervisor": "Yanyan Ji",
+    "title": "Open Project",
+    "description": "This open topic project encourages students to propose and develop innovative solutions to real-life problems using embedded systems and AI algorithms. Students are expected to select a suitable microcontroller or single-board computer (e.g., ESP32, STM32, Raspberry Pi) and integrate various sensors (such as cameras, microphones, temperature, humidity, motion sensors, etc.) to build a functional prototype. The project should combine hardware with intelligent algorithms (e.g., machine learning, computer vision, signal processing) to create a practical application that addresses everyday challenges, such as smart home automation, health monitoring, environmental sensing, assistive devices for the elderly or disabled, or any other context where embedded AI can make a difference. The outcome should be a working system demonstrating the integration of hardware and software to solve a tangible problem. Students will document their design, implementation, and testing process, and present the final prototype."
+  },
+  {
+    "file": "Prof_HongjianSHI_FYP-Topics.docx",
+    "supervisor": "Hongjian Shi",
+    "title": "Artificial expansion of digital images",
+    "description": "Description  Digital images are in our daily life from cell phone to professional camera. Expansion of digital images encounters challenging issues of zigzag artifacts. This project is to find automatic and artificial expansion methods to make the expanded images without zigzag artifacts in comparison with traditional image expansion methods.  Digital images are in our daily life from cell phone to professional camera. Expansion of digital images encounters challenging issues of zigzag artifacts. This project is to find automatic and artificial expansion methods to make the expanded images without zigzag artifacts in comparison with traditional image expansion methods."
+  },
+  {
+    "file": "Prof_HongjianSHI_FYP-Topics.docx",
+    "supervisor": "Hongjian Shi",
+    "title": "Application of data mining to image edge detection and enhancement",
+    "description": "Data mining has many mining methods in extracting useful information in data distribution. This project is to investigate the data mining methods for image edge detection and image enhancement."
+  },
+  {
+    "file": "Prof_HongjianSHI_FYP-Topics.docx",
+    "supervisor": "Hongjian Shi",
+    "title": "Deep learning method for medical image classification",
+    "description": "Medical image classification has wide applications in disease diagnosis and treatment. This project is to apply deep learning model to medical image classification such as the tumor detection and classification of different images such as X-ray, CT images or MRI images to improve predication rate of correct diseases from medical images."
+  },
+  {
+    "file": "Prof_Weifeng_Su_FYP-Topics.docx",
+    "supervisor": "Weifeng SU",
+    "title": "Image fusion based medical image processing",
+    "description": "Description  Image fusion-based medical image processing is a technique that combines information from multiple imaging modalities to create a single, comprehensive image that enhances the visualization and analysis of anatomical structures and pathologies. This approach leverages the strengths of different imaging techniques, such as MRI, CT, PET, and ultrasound, which each provide unique insights into various aspects of tissue composition, function, and structure. By fusing images, clinicians can obtain a more detailed and accurate representation of the area of interest, facilitating better diagnosis, treatment planning, and monitoring of disease progression. Image fusion helps overcome the limitations of individual modalities, such as MRI's excellent soft tissue contrast and CT's superior bone imaging, by integrating these complementary data sets into a unified image that improves clinical decision-making and patient outcomes."
+  },
+  {
+    "file": "Prof_Weifeng_Su_FYP-Topics.docx",
+    "supervisor": "Weifeng SU",
+    "title": "LLM-Guided Distilled Feedback for Universal Segmentation Enhancement",
+    "description": "We propose a novel framework for segmentation enhancement that leverages large language and vision-language models (LLM/VLM) as perceptual judges to guide model optimization. Candidate mask perturbations are generated for segmentation outputs, which are evaluated by LLMs to produce ranking signals and natural language feedback. These signals are then distilled into a differentiable evaluator network, allowing end-to-end fine-tuning of any segmentation model. Our approach enables weakly-supervised, perceptually-informed segmentation optimization, improving semantic consistency, edge fidelity, and robustness across multiple segmentation tasks."
+  },
+  {
+    "file": "Prof_Weifeng_Su_FYP-Topics.docx",
+    "supervisor": "Weifeng SU",
+    "title": "Archery Score Reporting system",
+    "description": "An archery score reporting system is a comprehensive digital platform designed to streamline the process of recording and analyzing scores during archery competitions. This system typically includes features such as real-time score updates, automated calculations, and detailed statistical analysis, enabling participants and organizers to track performance efficiently. The platform can be accessed via mobile devices or computers, allowing archers to input their scores directly after each round, while judges and officials can verify and validate the results. Additionally, the system often provides visual representations of scoring trends and historical data, helping archers to identify areas for improvement and strategize for future competitions. Overall, the archery score reporting system enhances the accuracy, transparency, and accessibility of score management in the sport."
+  },
+  {
+    "file": "Prof_Weifeng_Su_FYP-Topics.docx",
+    "supervisor": "Weifeng SU",
+    "title": "Neural Tone Transform",
+    "description": "By importing pre-trained deep learning models, it instantly converts input signals from ordinary instruments (such as low-cost electric guitars or electronic keyboards) into high-fidelity target instrument tones (including pre-trained premium orchestral instruments, classic synthesizers, or specific cabinet emulations). While maintaining ultra-low latency during performance, it can accurately preserve the dynamic expression and playing nuances of the original input signal."
+  }
+]
